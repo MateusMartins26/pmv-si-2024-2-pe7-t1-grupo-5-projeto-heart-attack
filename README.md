@@ -1,4 +1,4 @@
-# PROJETO HEART ATTACK
+# Projeto Heart Attack
 
 `CURSO: Sistemas de Informação`
 
