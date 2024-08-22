@@ -62,7 +62,7 @@ Nesta seção, deverão ser descritas outras abordagens identificadas na literat
 > - [Science Direct](https://www.sciencedirect.com/)
 > - [ACM Digital Library](https://dl.acm.org/)
 
-# Descrição do _dataset_ selecionado
+# Descrição do _dataset_ selecionado - Marcus
 
 Nesta seção, você deverá descrever detalhadamente o _dataset_ selecionado. Lembre-se de informar o link de acesso a ele, bem como, de descrever cada um dos seus atributos (a que se refere, tipo do atributo etc.), se existem atributos faltantes etc.
 
