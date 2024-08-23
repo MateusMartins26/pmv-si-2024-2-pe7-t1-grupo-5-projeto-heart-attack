@@ -64,7 +64,26 @@ Nesta seção, deverão ser descritas outras abordagens identificadas na literat
 
 # Descrição do _dataset_ selecionado - Marcus
 
-Nesta seção, você deverá descrever detalhadamente o _dataset_ selecionado. Lembre-se de informar o link de acesso a ele, bem como, de descrever cada um dos seus atributos (a que se refere, tipo do atributo etc.), se existem atributos faltantes etc.
+O dataset escolhido para o tema contém atributos pertinentes para criação do modelo para deduzir se um paciente possui ou não o risco de ter um ataque cardíaco. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
+
+
+* Gênero: atributo que define se o paciente é um homem ou uma mulher;
+* Idade: atributo que define a idade de cada um dos pacientes apresentados na base de dados;
+* Pressão Arterial: se acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes  possuem ou não hipertensão, um fator importante para ataques cardíacos;
+* Colesterol: segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
+* Se possui ou não diabete: dado booleano que indica basicamente se a pessoa ou não diabete.
+* Situação sobre fumar: Dado qualitativo que indica se a pessoa fuma por quatro categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
+* Tipos de dor no peito que os pacientes sentiram.
+* Tipo de tratamento que os pacientes receberam.
+
+
+Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
+
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf 22/08/2024 às 20:23
+
+https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito). 22/08/2024
+
 
 # Canvas analítico
 
