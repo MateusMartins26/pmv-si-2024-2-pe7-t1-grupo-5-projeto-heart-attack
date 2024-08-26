@@ -67,14 +67,14 @@ Nesta seção, deverão ser descritas outras abordagens identificadas na literat
 O dataset escolhido para o tema contém atributos pertinentes para criação do modelo para deduzir se um paciente possui ou não o risco de ter um ataque cardíaco. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
 
 
-* Gênero: atributo que define se o paciente é um homem ou uma mulher;
-* Idade: atributo que define a idade de cada um dos pacientes apresentados na base de dados;
-* Pressão Arterial: se acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes  possuem ou não hipertensão, um fator importante para ataques cardíacos;
+* Gênero: atributo do tipo textual que define se o paciente é um homem ou uma mulher;
+* Idade: atributo numérico que determina a idade de cada um dos pacientes apresentados na base de dados;
+* Pressão Arterial: de acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes possuem ou não hipertensão, um fator importante para ataques cardíacos;
 * Colesterol: segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
-* Se possui ou não diabete: dado booleano que indica basicamente se a pessoa ou não diabete.
-* Situação sobre fumar: Dado qualitativo que indica se a pessoa fuma por quatro categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
-* Tipos de dor no peito que os pacientes sentiram.
-* Tipo de tratamento que os pacientes receberam.
+* Se possui ou não diabete: dado booleano que indica basicamente se a pessoa possui ou não diabete.
+* Situação sobre fumar: Dado qualitativo que indica se a pessoa fuma por três categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
+* Atributo do tipo textual que indica alguns tipos de dor no peito que os pacientes sentiram.
+* Atributo do tipo textual que mostra os tratamentos recebidos pelos pacientes..
 
 
 Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
