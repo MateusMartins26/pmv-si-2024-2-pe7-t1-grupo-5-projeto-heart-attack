@@ -73,8 +73,8 @@ O dataset escolhido para o tema contém atributos pertinentes para criação do 
 * Colesterol: segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
 * Se possui ou não diabete: dado booleano que indica basicamente se a pessoa possui ou não diabete.
 * Situação sobre fumar: Dado qualitativo que indica se a pessoa fuma por três categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
-* Atributo do tipo textual que indica alguns tipos de dor no peito que os pacientes sentiram.
-* Atributo do tipo textual que mostra os tratamentos recebidos pelos pacientes..
+* Tipo de dor no peito: Atributo do tipo textual que indica alguns tipos de dor no peito que os pacientes sentiram.
+* Tratamento utilizado: Atributo do tipo textual que mostra os tratamentos recebidos pelos pacientes..
 
 
 Ao analisar cada um dos atributos desta base de dados, foi possível concluir que não será necessário realizar uma limpeza nos dados, pois não foi encontrado valores inesperados dentro do dataset.
