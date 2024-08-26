@@ -77,6 +77,8 @@ O dataset escolhido para o tema contém atributos pertinentes para criação do 
 * Atributo do tipo textual que mostra os tratamentos recebidos pelos pacientes..
 
 
+Ao analisar cada um dos atributos desta base de dados, foi possível concluir que não será necessário realizar uma limpeza nos dados, pois não foi encontrado valores inesperados dentro do dataset.
+
 Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
 
 
