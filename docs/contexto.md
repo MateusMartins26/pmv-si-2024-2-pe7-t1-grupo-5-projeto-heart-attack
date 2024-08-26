@@ -15,7 +15,7 @@ Descreva ainda o contexto em que essa aplicação será usada, se houver: empres
 
 ## Questão de pesquisa
 
-A questão de pesquisa é a base de todo o trabalho que será desenvolvido. É ela que motiva a realização da pesquisa e deverá ser adequada ao problema identificado. Ao término de sua pesquisa/experimentação, o objetivo é que seja encontrada a resposta da questão de pesquisa previamente definida.
+O que motivou a pesquisa foi a busca por uma análise preditiva que auxilie aos profissionais da saúde a encontrar o melhor tratamento para os pacientes que possuem risco de ataques de coração.
 
 > **Links Úteis**:
 > - [Questão de pesquisa](https://www.enago.com.br/academy/how-to-develop-good-research-question-types-examples/)
