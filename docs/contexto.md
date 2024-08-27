@@ -115,7 +115,9 @@ O aplicativo utiliza esses dados para treinar modelos de machine learning, que s
  - **Avaliações de Usuários:** Como o Heart Disease Prediction App da Nevon Projects é voltado para estudantes e desenvolvedores, o feedback frequentemente foca em sua utilidade como ferramenta de aprendizado em vez de seu uso clínico direto. Usuários geralmente consideram o projeto uma boa introdução ao uso de machine learning em saúde.
 - **Aplicações Práticas:** Como o aplicativo é mais um protótipo, não há relatos amplamente documentados sobre seu uso em cenários clínicos ou sua aceitação por profissionais de saúde.
 
-
+### Fontes ###
+Nevon Projects. (n.d.). Heart Disease Prediction App. Nevon Projects. Disponível em: https://nevonprojects.com/android-heart-disease-prediction-app/.
+UCI Machine Learning Repository. (n.d.). Heart Disease Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/heart+disease.
 
 # Descrição do _dataset_ selecionado - Marcus
 
