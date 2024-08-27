@@ -62,6 +62,61 @@ Nesta seção, deverão ser descritas outras abordagens identificadas na literat
 > - [Science Direct](https://www.sciencedirect.com/)
 > - [ACM Digital Library](https://dl.acm.org/)
 
+### Android Heart Disease Prediction App ###
+
+O _Heart Disease Prediction App_, da Nevon Projects, é um projeto voltado para demonstração e aprendizado, geralmente oferecido como um kit para estudantes e desenvolvedores que desejam entender e implementar tecnologias de machine learning em aplicações médicas. Como ferramenta de estudo, ele um exemplo de aplicação móvel projetada para auxiliar os usuários na avaliação do risco de desenvolver doenças cardíacas. Assim como outros aplicativos similares, como o _My Heart_, o _Heart Disease Prediction App_ permite que o usuário insira dados pessoais como idade, gênero, pressão arterial, níveis de colesterol e hábitos de vida, como tabagismo e atividade física. Com base nesses dados, o aplicativo utiliza modelos preditivos, baseados em técnicas de machine learning, para calcular a probabilidade de o usuário desenvolver uma condição cardíaca.
+
+O aplicativo utiliza o _Heart Disease Dataset_ disponível na UCI Machine Learning Repository para realizar suas análises preditivas. Esse dataset é amplamente usado em estudos acadêmicos e aplicações de machine learning para treinar modelos que possam prever o risco de doenças cardíacas com base em dados pessoais dos usuários.
+
+#### Detalhes do Dataset: ####
+- Fonte: UCI Machine Learning Repository.
+- Objetivo: O objetivo principal do dataset é prever a presença de doenças cardíacas em pacientes, classificando-os em risco alto ou baixo.
+- Características: O dataset inclui 14 atributos que são comumente associados ao risco de doenças cardíacas:
+1. Age (Idade): Idade do paciente em anos.
+2. Sex (Sexo):
+    - 1: Masculino
+    - 0: Feminino
+3. Chest Pain Type (Tipo de Dor no Peito):
+    - 1: Angina típica
+    - 2: Angina atípica
+    - 3: Dor não relacionada à angina
+    - 4: Assintomático
+4. Resting Blood Pressure (Pressão Arterial em Repouso): Pressão arterial em repouso medida em mm Hg.
+5. Serum Cholesterol (Colesterol Sérico): Nível de colesterol sérico em mg/dl.
+6. Fasting Blood Sugar (Glicose em Jejum): Se o nível de açúcar no sangue em jejum é maior que 120 mg/dl.
+    - 1: Verdadeiro
+    - 0: Falso
+7. Resting Electrocardiographic Results (Resultados do Eletrocardiograma em Repouso):
+    - 0: Normal
+    - 1: Anormalidade na onda ST-T (inversão da onda T e/ou elevação ou depressão de ST > 0,05 mV)
+    - 2: Hipertrofia ventricular esquerda provável ou definitiva
+8. Maximum Heart Rate Achieved (Frequência Cardíaca Máxima Atingida): A frequência cardíaca máxima alcançada durante o teste de esforço.
+9. Exercise Induced Angina (Angina Induzida por Exercício):
+    - 1: Sim
+    - 0: Não
+10. ST Depression Induced by Exercise Relative to Rest (Depressão de ST Induzida por Exercício em Relação ao Repouso): Medida da depressão do segmento ST durante o exercício em comparação com o repouso.
+11. Slope of the Peak Exercise ST Segment (Inclinação do Segmento ST no Pico do Exercício):
+    - 1: Inclinação ascendente
+    - 2: Plana
+    - 3: Inclinação descendente
+12. Number of Major Vessels Colored by Fluoroscopy (Número de Vasos Principais Coloridos por Fluoroscopia): Número de vasos principais (0-3) coloridos por fluoroscopia.
+13. Thalassemia (Talassemia):
+    - 3: Normal
+    - 6: Defeito fixo
+    - 7: Defeito reversível
+14. Target (Meta): Esta é a variável de saída que indica a presença de doença cardíaca.
+    - 0: Não tem doença cardíaca
+    - 1: Tem doença cardíaca
+
+O aplicativo utiliza esses dados para treinar modelos de machine learning, que são então empregados para fornecer predições de risco de doenças cardíacas com base nas entradas do usuário.
+
+### Resultados ###
+
+ - **Avaliações de Usuários:** Como o Heart Disease Prediction App da Nevon Projects é voltado para estudantes e desenvolvedores, o feedback frequentemente foca em sua utilidade como ferramenta de aprendizado em vez de seu uso clínico direto. Usuários geralmente consideram o projeto uma boa introdução ao uso de machine learning em saúde.
+- **Aplicações Práticas:** Como o aplicativo é mais um protótipo, não há relatos amplamente documentados sobre seu uso em cenários clínicos ou sua aceitação por profissionais de saúde.
+
+
+
 # Descrição do _dataset_ selecionado - Marcus
 
 O dataset escolhido para o tema contém atributos pertinentes para criação do modelo para deduzir se um paciente possui ou não o risco de ter um ataque cardíaco. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
