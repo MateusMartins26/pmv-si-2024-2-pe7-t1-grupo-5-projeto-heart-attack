@@ -104,8 +104,7 @@ O aplicativo utiliza esses dados para treinar modelos de machine learning, que s
 - **Aplicações Práticas:** Como o aplicativo é mais um protótipo, não há relatos amplamente documentados sobre seu uso em cenários clínicos ou sua aceitação por profissionais de saúde.
 
 ### Fontes ###
-Nevon Projects. (n.d.). Heart Disease Prediction App. Nevon Projects. Disponível em: https://nevonprojects.com/android-heart-disease-prediction-app/.
-UCI Machine Learning Repository. (n.d.). Heart Disease Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/heart+disease.
+
 
 
 ### Prevendo Doenças Cardiovasculares com Machine Learning ###
@@ -190,7 +189,11 @@ Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analí
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho utilizando o padrão ABNT.
+Nevon Projects. (n.d.). Heart Disease Prediction App. Nevon Projects. Disponível em: https://nevonprojects.com/android-heart-disease-prediction-app/.
+UCI Machine Learning Repository. (n.d.). Heart Disease Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/heart+disease.
 
-> **Links Úteis**:
-> - [Padrão ABNT PUC Minas](https://portal.pucminas.br/biblioteca/index_padrao.php?pagina=5886)
+
+FREESZ, Larissa e PINHEIRO, Paula. ENTENDO A PRESSÃO ARTERIAL. **UFMG**, Minas Gerais, 2011. Disponível em <chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf>. Acesso em: 28 de ago. de 2024.
+
+OYAMA, Patrícia. Pressão alta: o maior perigo é a falta de informação. **Abbott**, 2018. Disponível em: <https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito)>. Acesso em: 28 de ago. de 2024.
+
