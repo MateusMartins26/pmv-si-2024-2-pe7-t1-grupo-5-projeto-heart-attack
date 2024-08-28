@@ -193,7 +193,7 @@ Nevon Projects. (n.d.). Heart Disease Prediction App. Nevon Projects. Disponíve
 UCI Machine Learning Repository. (n.d.). Heart Disease Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/heart+disease.
 
 
-FREESZ, Larissa e PINHEIRO, Paula. ENTENDO A PRESSÃO ARTERIAL. **UFMG**, Minas Gerais, 2011. Disponível em <chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf>. Acesso em: 28 de ago. de 2024.
+FREESZ, Larissa e PINHEIRO, Paula. ENTENDO A PRESSÃO ARTERIAL. **UFMG**, Minas Gerais, 2011. Disponível em <https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf>. Acesso em: 28 de ago. de 2024.
 
 OYAMA, Patrícia. Pressão alta: o maior perigo é a falta de informação. **Abbott**, 2018. Disponível em: <https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito)>. Acesso em: 28 de ago. de 2024.
 
