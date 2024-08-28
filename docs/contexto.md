@@ -21,12 +21,9 @@ O que motivou a pesquisa foi a busca por uma análise preditiva que auxilie aos 
 
 ## Objetivos preliminares
 
-Aqui você deve descrever os objetivos preliminares do trabalho indicando que o objetivo geral é experimentar modelos de aprendizado de máquina adequados para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-
-Por exemplo: um objetivo específico pode estar relacionado a predizer a tendência de alta, estabilidade ou queda de uma determinada ação em uma determinada janela do tempo ou então, predizer o valor exato de uma determinada ação.
-Lembre-se que, à medida que a pesquisa/experimentação evolui, os objetivos podem evoluir também, portanto, não se esqueça de fazer as atualizações necessárias.
+Desenvolver um modelo preditivo utilizando técnicas de aprendizado de máquina para estimar com alguma precisão o risco de ocorrência de um doenças coronárias em indivíduos com alguma enfermidade prévia.
+Haverá análise dos fatores de risco presentes em um dataset público, identificando quais variáveis influenciam mais o desenvolvimento de doenças coronarianas. 
+Definido os fatores e suas respectivas grandezas, será elaborado um modelo preditivo, de modo a contribuir para a tomada de decisões em relação ao tratamento mais adequado por parte dos profissionais de saúde e promoção da saúde cardiovascular dos pacientes.
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
