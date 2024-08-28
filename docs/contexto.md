@@ -132,6 +132,57 @@ chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ufmg.br/cienciap
 https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito). 22/08/2024
 
 
+###Prevendo Doenças Cardiovasculares com Machine Learning###
+Um estudo sobre predição de doenças cardíacas.
+
+##Objetivo##
+O principal objetivo desta análise é aprimorar minhas habilidades em Análise Exploratória de Dados (AED) como entusiasta no mundo dos dados. Através deste projeto, pretendo trabalhar, crescer e manter minha proficiência em explorar e compreender conjuntos de dados.
+
+##Sobre o problema##
+As doenças cardíacas, uma das principais preocupações globais de saúde, têm sido alvo de estudos aprofundados, e o campo do aprendizado de máquina tem se destacado como uma ferramenta promissora para lidar com essa questão crucial.
+
+##Os dados (variáveis/colunas)##
+Nomes e traduções:
+
+age: idade em anos
+sex: sexo (1 = masc 0 = fem)
+cp: chest pain type (dor no peito)
+Valor 0: asymptomatic (assintomática)
+Valor 1: typical angina (típica)
+Valor 2: atypical angina (atípica)
+Valor 3: non-anginal pain (não anginosa)
+trestbps: resting blood pressure (in mm Hg on admission to the hospital) — pressão arterial de repouso (em mm Hg na admissão ao hospital)
+chol: serum cholestoral in mg/dl — colesterol sérico em mg/dl
+restecg: resting electrocardiographic results (values 0, 1, 2) — Resultados eletrocardiográficos em repouso: Valores 0, 1, 2.
+fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false) — glicemia em jejum
+thalach: maximum heart rate achieved — Frequência cardíaca máxima atingida
+exang: exercise induced angina (1 = yes; 0 = no) — angina induzida por exercício
+oldpeak: ST depression induced by exercise relative to rest — Depressão de ST induzida por exercício em relação ao
+slope(inclinação): a inclinação do pico do segmento ST do exercício
+Valor 0: inclinação ascendente
+Valor 1: plano
+Valor 2: descida<br>
+ca: number of major vessels (0–3) colored by flouroscopy — Número de vasos principais coloridos por fluoroscopia:
+Valor 0: Normal
+Valor 1: Com onda ST-T anormal
+Valor 2: Mostrando provável (ou definida) hipertrofia do ventrículo esquerdo
+thal: 1 = (normal; 2 = fixed defect; 3 = reversable defect)Talassemia:
+normal
+problema corrigido
+problema reversível
+target: 0 = não possui doença cardíaca, 1 = possui doença cardíaca
+—
+Link do Dataset: https://archive.ics.uci.edu/dataset/45/heart+disease
+
+##Conclusão##
+Nesse código gigantesco estudamos algumas variáveis e plots para criarmos modelos de Machine Learning que pudessem prever se, com novas entradas, uma predição assertiva poessa ser feita. Obtivemos bons resultados nas máquinas preditivas mas todo ajuste é bem vindo e o objetivo é aumentar cada mais mais sua capacidade de prever corretamente.
+
+Desde já agradeço a sua atenção e me coloco à disposição para dúvidas.
+
+##Fonte##
+**https://medium.com/@jonatasliberato/prevendo-doen%C3%A7as-cardiovasculares-2a2c3dd68789**
+
+
 # Canvas analítico
 
 Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analítico tem o papel de registrar a organização das ideias e apresentar o modelo de negócio. O Canvas Analítico deverá ser preenchido integralmente mesmo que você não tenha "tantas certezas".
