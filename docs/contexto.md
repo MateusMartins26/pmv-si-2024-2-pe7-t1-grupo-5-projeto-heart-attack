@@ -107,41 +107,17 @@ O aplicativo utiliza esses dados para treinar modelos de machine learning, que s
 Nevon Projects. (n.d.). Heart Disease Prediction App. Nevon Projects. Disponível em: https://nevonprojects.com/android-heart-disease-prediction-app/.
 UCI Machine Learning Repository. (n.d.). Heart Disease Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/heart+disease.
 
-# Descrição do _dataset_ selecionado - Marcus
 
-O dataset escolhido para o tema contém atributos pertinentes para criação do modelo para deduzir se um paciente possui ou não o risco de ter um ataque cardíaco. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
-
-
-* Gênero: atributo do tipo textual que define se o paciente é um homem ou uma mulher;
-* Idade: atributo numérico que determina a idade de cada um dos pacientes apresentados na base de dados;
-* Pressão Arterial: de acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes possuem ou não hipertensão, um fator importante para ataques cardíacos;
-* Colesterol: segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
-* Se possui ou não diabete: dado booleano que indica basicamente se a pessoa possui ou não diabete.
-* Situação sobre fumar: Dado qualitativo que indica se a pessoa fuma por três categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
-* Tipo de dor no peito: Atributo do tipo textual que indica alguns tipos de dor no peito que os pacientes sentiram.
-* Tratamento utilizado: Atributo do tipo textual que mostra os tratamentos recebidos pelos pacientes..
-
-
-Ao analisar cada um dos atributos desta base de dados, foi possível concluir que não será necessário realizar uma limpeza nos dados, pois não foi encontrado valores inesperados dentro do dataset.
-
-Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
-
-
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf 22/08/2024 às 20:23
-
-https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito). 22/08/2024
-
-
-###Prevendo Doenças Cardiovasculares com Machine Learning###
+### Prevendo Doenças Cardiovasculares com Machine Learning ###
 Um estudo sobre predição de doenças cardíacas.
 
-##Objetivo##
+## Objetivo ##
 O principal objetivo desta análise é aprimorar minhas habilidades em Análise Exploratória de Dados (AED) como entusiasta no mundo dos dados. Através deste projeto, pretendo trabalhar, crescer e manter minha proficiência em explorar e compreender conjuntos de dados.
 
-##Sobre o problema##
+## Sobre o problema ##
 As doenças cardíacas, uma das principais preocupações globais de saúde, têm sido alvo de estudos aprofundados, e o campo do aprendizado de máquina tem se destacado como uma ferramenta promissora para lidar com essa questão crucial.
 
-##Os dados (variáveis/colunas)##
+## Os dados (variáveis/colunas) ##
 Nomes e traduções:
 
 age: idade em anos
@@ -174,13 +150,35 @@ target: 0 = não possui doença cardíaca, 1 = possui doença cardíaca
 —
 Link do Dataset: https://archive.ics.uci.edu/dataset/45/heart+disease
 
-##Conclusão##
+## Conclusão ##
 Nesse código gigantesco estudamos algumas variáveis e plots para criarmos modelos de Machine Learning que pudessem prever se, com novas entradas, uma predição assertiva poessa ser feita. Obtivemos bons resultados nas máquinas preditivas mas todo ajuste é bem vindo e o objetivo é aumentar cada mais mais sua capacidade de prever corretamente.
 
-Desde já agradeço a sua atenção e me coloco à disposição para dúvidas.
-
-##Fonte##
+## Fonte ##
 **https://medium.com/@jonatasliberato/prevendo-doen%C3%A7as-cardiovasculares-2a2c3dd68789**
+
+# Descrição do _dataset_ selecionado - Marcus
+
+O dataset escolhido para o tema contém atributos pertinentes para criação do modelo para deduzir se um paciente possui ou não o risco de ter um ataque cardíaco. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
+
+
+* Gênero: atributo do tipo textual que define se o paciente é um homem ou uma mulher;
+* Idade: atributo numérico que determina a idade de cada um dos pacientes apresentados na base de dados;
+* Pressão Arterial: de acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes possuem ou não hipertensão, um fator importante para ataques cardíacos;
+* Colesterol: segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
+* Se possui ou não diabete: dado booleano que indica basicamente se a pessoa possui ou não diabete.
+* Situação sobre fumar: Dado qualitativo que indica se a pessoa fuma por três categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
+* Tipo de dor no peito: Atributo do tipo textual que indica alguns tipos de dor no peito que os pacientes sentiram.
+* Tratamento utilizado: Atributo do tipo textual que mostra os tratamentos recebidos pelos pacientes..
+
+
+Ao analisar cada um dos atributos desta base de dados, foi possível concluir que não será necessário realizar uma limpeza nos dados, pois não foi encontrado valores inesperados dentro do dataset.
+
+Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
+
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf 22/08/2024 às 20:23
+
+https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito). 22/08/2024
 
 
 # Canvas analítico
