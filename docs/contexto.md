@@ -175,10 +175,6 @@ Ao analisar cada um dos atributos desta base de dados, foi possível concluir qu
 Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
 
 
-chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf 22/08/2024 às 20:23
-
-https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito). 22/08/2024
-
 
 # Canvas analítico
 
