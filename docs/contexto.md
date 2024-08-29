@@ -41,7 +41,7 @@ Nesta seção, deverão ser descritas outras abordagens identificadas na literat
 > - [Science Direct](https://www.sciencedirect.com/)
 > - [ACM Digital Library](https://dl.acm.org/)
 
-### Android Heart Disease Prediction App ###
+### Android Heart Disease Prediction App ### (Nevon Projects, 2024)
 
 O _Heart Disease Prediction App_, da Nevon Projects, é um projeto voltado para demonstração e aprendizado, geralmente oferecido como um kit para estudantes e desenvolvedores que desejam entender e implementar tecnologias de machine learning em aplicações médicas. Como ferramenta de estudo, ele um exemplo de aplicação móvel projetada para auxiliar os usuários na avaliação do risco de desenvolver doenças cardíacas. Assim como outros aplicativos similares, como o _My Heart_, o _Heart Disease Prediction App_ permite que o usuário insira dados pessoais como idade, gênero, pressão arterial, níveis de colesterol e hábitos de vida, como tabagismo e atividade física. Com base nesses dados, o aplicativo utiliza modelos preditivos, baseados em técnicas de machine learning, para calcular a probabilidade de o usuário desenvolver uma condição cardíaca.
 
