@@ -9,8 +9,7 @@ Através da análise dos dados e identificação dos principais fatores de risco
 
 ## Questão de pesquisa
 
-Qual a possibilidade de se criar um modelo capaz de realizar previsões para se buscar o melhor tratamento para ataques cardíacos?
-
+Qual a possibilidade de se criar um modelo confiável e com bom grau de precisão para a partir de um conjunto de atributos e fatores relacionados a doenças cardíacas recomendar o tratamento adequado?
 
 
 ## Objetivos preliminares
