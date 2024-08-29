@@ -99,7 +99,8 @@ O aplicativo utiliza esses dados para treinar modelos de machine learning, que s
 Um estudo sobre predição de doenças cardíacas.
 
 ## Objetivo ##
-O principal objetivo desta análise é aprimorar minhas habilidades em Análise Exploratória de Dados (AED) como entusiasta no mundo dos dados. Através deste projeto, pretendo trabalhar, crescer e manter minha proficiência em explorar e compreender conjuntos de dados.
+
+O objetivo dos componentes do projeto é elaborar uma ferramenta auxiliar que usa aprendizado de máquina. Com isso, essa solução indicará aos profissionais da saúde o melhor tratamento para os seus pacientes com base em seus parâmetros.
 
 ## Sobre o problema ##
 As doenças cardíacas, uma das principais preocupações globais de saúde, têm sido alvo de estudos aprofundados, e o campo do aprendizado de máquina tem se destacado como uma ferramenta promissora para lidar com essa questão crucial.
