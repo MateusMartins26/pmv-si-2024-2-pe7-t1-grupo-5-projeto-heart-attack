@@ -6,18 +6,12 @@ Texto descritivo introdutório apresentando a visão geral do projeto a ser dese
 
 Através da análise dos dados e identificação dos principais fatores de risco para o desenvolvimento de doenças coronarianas, como o aprendizado de máquina pode auxiliar na melhora da performance médica para prognóstico e posterior diagnóstico em pacientes desse problema de saúde?
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Questão de pesquisa
 
 O que motivou a pesquisa foi a busca por uma análise preditiva que auxilie aos profissionais da saúde a encontrar o melhor tratamento para os pacientes que possuem risco de ataques de coração.
 
-> **Links Úteis**:
-> - [Questão de pesquisa](https://www.enago.com.br/academy/how-to-develop-good-research-question-types-examples/)
-> - [Problema de pesquisa](https://blog.even3.com.br/problema-de-pesquisa/)
+
 
 ## Objetivos preliminares
 
@@ -25,15 +19,11 @@ Desenvolver um modelo preditivo utilizando técnicas de aprendizado de máquina 
 Haverá análise dos fatores de risco presentes em um dataset público, identificando quais variáveis influenciam mais o desenvolvimento de doenças coronarianas. 
 Definido os fatores e suas respectivas grandezas, será elaborado um modelo preditivo, de modo a contribuir para a tomada de decisões em relação ao tratamento mais adequado por parte dos profissionais de saúde e promoção da saúde cardiovascular dos pacientes.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa -Lucas 
 
 Descreva a importância ou a motivação para trabalhar com o conjunto de dados escolhido. Indique as razões pelas quais você escolheu seus objetivos específicos, as razões para aprofundar o estudo do problema identificado e qual o impacto que tal problema provoca na sociedade. Lembre-se de quantificar (com dados reais e suas respectivas fontes) este impacto.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo - Mateus 
 
@@ -102,8 +92,6 @@ O aplicativo utiliza esses dados para treinar modelos de machine learning, que s
 
  - **Avaliações de Usuários:** Como o Heart Disease Prediction App da Nevon Projects é voltado para estudantes e desenvolvedores, o feedback frequentemente foca em sua utilidade como ferramenta de aprendizado em vez de seu uso clínico direto. Usuários geralmente consideram o projeto uma boa introdução ao uso de machine learning em saúde.
 - **Aplicações Práticas:** Como o aplicativo é mais um protótipo, não há relatos amplamente documentados sobre seu uso em cenários clínicos ou sua aceitação por profissionais de saúde.
-
-### Fontes ###
 
 
 
