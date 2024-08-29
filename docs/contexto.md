@@ -9,7 +9,7 @@ Através da análise dos dados e identificação dos principais fatores de risco
 
 ## Questão de pesquisa
 
-O que motivou a pesquisa foi a busca por uma análise preditiva que auxilie aos profissionais da saúde a encontrar o melhor tratamento para os pacientes que possuem risco de ataques de coração.
+Qual a possibilidade de se criar um modelo capaz de realizar previsões para se buscar o melhor tratamento para ataques cardíacos?
 
 
 
