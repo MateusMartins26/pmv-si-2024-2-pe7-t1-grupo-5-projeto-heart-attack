@@ -32,6 +32,13 @@ Mapa de stakeholders
 
 ![image](https://github.com/user-attachments/assets/78f57562-acf9-44ef-a38f-6aac275c6c1e)
 
+Descrição:
+
+1° Os Beneficiários Diretos (Primários) da ferramenta de apoio, serão os médicos.
+
+2° Os Beneficiários Indiretos (Secundários) da ferramenta de apoio, serão os pacientes.
+
+3° Os Beneficiários Indiretos (Terciários) da ferramentade apoio, serão o Governo, o Sistema Único de Saúde, e os demais orgãos públicos e privados ligados a saúde.
 
 ## Estado da arte
 
