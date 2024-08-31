@@ -26,9 +26,12 @@ Descreva a importância ou a motivação para trabalhar com o conjunto de dados 
 
 ## Público-Alvo - Mateus 
 
-O público-alvo são homens e mulheres com idades entre 30 e 89 anos, com ou sem histórico de ataques cardíacos, residentes no Brasil, que desejam verificar se possuem risco de sofrer um ataque cardíaco.
+O público-alvo são médicos que desejam possuir uma ferramenta de apoio para tomadas de decisões relacionados a risco de ataque cardiacos em seus pacientes.
 
-Pendentes - Adicionar Personas
+Mapa de stakeholders
+
+![image](https://github.com/user-attachments/assets/78f57562-acf9-44ef-a38f-6aac275c6c1e)
+
 
 ## Estado da arte
 
