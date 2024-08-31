@@ -26,7 +26,7 @@ Descreva a importância ou a motivação para trabalhar com o conjunto de dados 
 
 ## Público-Alvo - Mateus 
 
-O público-alvo são médicos que desejam possuir uma ferramenta de apoio para tomadas de decisões relacionados a risco de ataque cardiacos em seus pacientes.
+O público-alvo são médicos que desejam possuir uma ferramenta de apoio para tomadas de decisões relacionadas ao risco de ataque cardiacos em seus pacientes.
 
 Mapa de stakeholders
 
