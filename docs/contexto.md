@@ -28,7 +28,7 @@ Descreva a importância ou a motivação para trabalhar com o conjunto de dados 
 
 O público-alvo são médicos que desejam possuir uma ferramenta de apoio para tomadas de decisões relacionadas ao risco de ataque cardiacos em seus pacientes.
 
-Mapa de stakeholders
+Mapa de stakeholders:
 
 ![image](https://github.com/user-attachments/assets/78f57562-acf9-44ef-a38f-6aac275c6c1e)
 
