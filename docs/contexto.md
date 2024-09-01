@@ -174,6 +174,8 @@ http://archive.ics.uci.edu/ml/datasets/Heart+Disease
 - Características: O Dataset obtido para a aplicação de mineração de dados inclui 13 tipos de entrada Dois bancos de dados de doenças cardíacas disponíveis publicamente com o mesmo tipo e número de atributos são mesclados para formar um conjunto de dados maior e obter maior precisão.
   
 - Explicação de 13 atributos de entrada usados ​​para formação e validação do modelo.
+- ![image](https://github.com/user-attachments/assets/7a777302-56c1-4d8e-98e3-6c5320e10b20)
+
 
 Atributos que estão relacionados a diferentes parâmetros do sistema cardiovascular. Para o design do sistema de classificação e predição baseado em nuvem, um atributo-chave foi projetado (ou seja, o número de celular do paciente que atua como o identificador exclusivo do paciente). Atributos previsíveis recebem uma escala numérica para determinar os dois grupos classificados (ou seja, Saudável e Com doença cardíaca). A Tabela 1 mostra os atributos de entrada contendo um total de 13 características fisiológicas retiradas dos dois conjuntos de dados mencionados anteriormente usados ​​para qualquer tipo de predição de anormalidade cardíaca.
 
