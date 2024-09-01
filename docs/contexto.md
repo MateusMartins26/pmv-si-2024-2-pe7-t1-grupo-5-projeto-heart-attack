@@ -177,8 +177,11 @@ http://archive.ics.uci.edu/ml/datasets/Heart+Disease
 
 Atributos que estão relacionados a diferentes parâmetros do sistema cardiovascular. Para o design do sistema de classificação e predição baseado em nuvem, um atributo-chave foi projetado (ou seja, o número de celular do paciente que atua como o identificador exclusivo do paciente). Atributos previsíveis recebem uma escala numérica para determinar os dois grupos classificados (ou seja, Saudável e Com doença cardíaca). A Tabela 1 mostra os atributos de entrada contendo um total de 13 características fisiológicas retiradas dos dois conjuntos de dados mencionados anteriormente usados ​​para qualquer tipo de predição de anormalidade cardíaca.
 
-- ![image](https://github.com/user-attachments/assets/8625b5fd-cd7c-42cf-ab38-9f7dca28a795)
+ ####  Conclusão  ####
 
+Sobre comparação entre vários algoritmos de aprendizado de máquina, foi descoberto que nenhum algoritmo atingiu um nível de precisão de mais de 90 por cento na previsão de doenças cardíacas usando o mesmo número e tipos de recursos usados ​​neste estudo. Embora um modelo do aplicativo de detecção de doenças cardíacas baseado em nuvem seja representado aqui, os trabalhos futuros serão focados no desenvolvimento de um servidor dedicado e dados.
+ 
+Fonte: https://www.scirp.org/journal/paperinformation?paperid=88650#ref15
 
 # Descrição do _dataset_ selecionado - Marcus
 
