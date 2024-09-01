@@ -16,17 +16,33 @@ Qual a possibilidade de se criar um modelo confiável e com bom grau de precisã
 
 Desenvolver um modelo preditivo utilizando técnicas de aprendizado de máquina para estimar com alguma precisão o risco de ocorrência de um doenças coronárias em indivíduos com alguma enfermidade prévia.
 Haverá análise dos fatores de risco presentes em um dataset público, identificando quais variáveis influenciam mais o desenvolvimento de doenças coronarianas. 
+
 Definido os fatores e suas respectivas grandezas, será elaborado um modelo preditivo, de modo a contribuir para a tomada de decisões em relação ao tratamento mais adequado por parte dos profissionais de saúde e promoção da saúde cardiovascular dos pacientes.
  
 
 ## Justificativa -Lucas 
 
-Descreva a importância ou a motivação para trabalhar com o conjunto de dados escolhido. Indique as razões pelas quais você escolheu seus objetivos específicos, as razões para aprofundar o estudo do problema identificado e qual o impacto que tal problema provoca na sociedade. Lembre-se de quantificar (com dados reais e suas respectivas fontes) este impacto.
+As doenças cardíacas continuam sendo uma das principais causas de morte no Brasil e no mundo. De acordo com dados globais recentes, as doenças cardiovasculares (DCV) representaram aproximadamente 19,8 milhões de mortes em 2022, um aumento significativo em relação aos 12,4 milhões registrados em 1990. Esse aumento é atribuído ao crescimento populacional, ao envelhecimento da população e à prevalência de fatores de risco como hipertensão, colesterol elevado, dieta inadequada e poluição do ar ​(Our World in Data, IHME).
 
+No Brasil, as doenças cardiovasculares são a principal causa de mortes, responsáveis por aproximadamente 380 mil óbitos por ano, o que equivale a cerca de 30% de todas as mortes no país. O Infarto Agudo do Miocárdio (IAM), popularmente conhecido como ataque cardíaco, e o acidente vascular cerebral (AVC) são as manifestações mais comuns e letais dessas doenças​ (Our World in Data).
+
+Globalmente, a doença arterial coronariana (DAC) é a forma mais comum de DCV, e em 2022, causou 371.506 mortes nos Estados Unidos, refletindo a gravidade da condição. Estima-se que uma em cada cinco mortes por DCV ocorra em pessoas com menos de 65 anos, destacando a importância de intervenções preventivas em populações mais jovens ​(CDC).
+
+Os dados também revelam disparidades regionais significativas na mortalidade por DCV. Regiões como a Europa Oriental e a Ásia Central apresentam as taxas mais altas de mortalidade ajustadas por idade, enquanto a Australásia apresenta as taxas mais baixas. Essas variações refletem diferenças nos sistemas de saúde, nos estilos de vida e na exposição a fatores de risco em diferentes partes do mundo (IHME).
+
+Em termos de fatores de risco, a hipertensão sistólica foi o maior contribuinte para a carga de doenças cardiovasculares, seguido por riscos dietéticos e poluição por partículas ambientais. Esses fatores destacam a necessidade de políticas de saúde pública focadas na redução desses riscos através de campanhas de conscientização e intervenções de saúde preventiva​ (IHME).
+
+A utilização de técnicas de machine learning para avaliar e melhorar o tratamento de pacientes com doenças cardíacas é de importância crucial devido ao impacto massivo dessas doenças na saúde global. Dado que as doenças cardiovasculares são a principal causa de mortes tanto no Brasil quanto no mundo, qualquer avanço que permita personalizar e otimizar o tratamento para diferentes perfis de pacientes pode ter efeitos profundamente positivos na saúde pública, servindo como ferramenta de apoio para médicos em suas tomadas de decisão.
+
+Machine learning oferece uma abordagem poderosa para a análise de grandes volumes de dados médicos, permitindo a identificação de padrões complexos que podem não ser evidentes para os métodos tradicionais. Por exemplo, ao considerar o estilo de vida, histórico médico e condições biológicas individuais, algoritmos de machine learning podem prever quais tratamentos são mais eficazes para diferentes subgrupos de pacientes. Isso é especialmente relevante para doenças como as cardiovasculares, onde os fatores de risco são múltiplos e interdependentes, variando de fatores genéticos a hábitos de vida como dieta e atividade física​ (CDC, IHME).
+
+Além disso, modelos de machine learning podem ser usados para identificar pacientes com maior risco de complicações, ajudando os médicos a tomar decisões informadas sobre intervenções precoces. Por exemplo, um paciente com hipertensão e histórico familiar de doenças cardíacas pode ser monitorado mais de perto ou tratado com regimes terapêuticos mais agressivos, baseados em predições específicas ao seu perfil​ (Our World in Data).
+
+Em resumo, o uso de machine learning em estudos acadêmicos focados na prevenção e tratamento de doenças cardíacas não só permite uma abordagem mais personalizada, mas também pode ajudar a reduzir a mortalidade e melhorar a qualidade de vida dos pacientes, ao garantir que cada indivíduo receba o tratamento mais adequado às suas necessidades específicas. Isso é particularmente vital em um cenário global onde a carga de doenças cardiovasculares continua a crescer, exigindo estratégias inovadoras e baseadas em dados para enfrentar esse desafio​ (IHME).
 
 ## Público-Alvo - Mateus 
 
-O público-alvo são médicos que desejam possuir uma ferramenta de apoio para tomadas de decisões relacionadas ao risco de ataque cardiacos em seus pacientes.
+O público-alvo são médicos que desejam possuir uma ferramenta de apoio para tomadas de decisões relacionadas à melhor forma de tratamento para pacientes que possuem algum problema cardíaco já diagnosticado.
 
 Mapa de stakeholders:
 
@@ -42,117 +58,108 @@ Descrição:
 
 ## Estado da arte
 
-Nesta seção, deverão ser descritas outras abordagens identificadas na literatura que foram utilizadas para resolver problemas similares ao problema em questão. Para isso, faça uma pesquisa detalhada e identifique, no mínimo, 5 trabalhos que tenham utilizado dados em contexto similares e então: (a) detalhe e contextualize o problema, (b) descreva as principais características do _dataset_ utilizado, (c) detalhe quais abordagens/algoritmos foram utilizados (e seus parâmetros), (d) identifique as métricas de avaliação empregadas, e (e) fale sobre os resultados obtidos. 
+### Heart Disease Prediction Using Machine Learning (International Journal of Innovative Research in Computer and Communication Engineering, 2024)
 
-> **Links Úteis**:
-> - [Google Scholar](https://scholar.google.com/)
-> - [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp)
-> - [Science Direct](https://www.sciencedirect.com/)
-> - [ACM Digital Library](https://dl.acm.org/)
+#### 1. Introdução ao Problema
+As doenças cardíacas são uma das principais causas de mortalidade no mundo, e a previsão precisa dessas condições pode salvar inúmeras vidas. O artigo "Heart Disease Prediction Using Machine Learning" de Lowlesh Yadav investiga a aplicação de técnicas de machine learning para prever a probabilidade de um indivíduo desenvolver doenças cardíacas. O objetivo principal do estudo é aprimorar a precisão das previsões ao empregar diferentes algoritmos de machine learning, comparando seu desempenho e selecionando a melhor abordagem para este problema crítico de saúde pública.
 
-### Android Heart Disease Prediction App ### (Nevon Projects, 2024)
+#### 2. Características do Dataset Utilizado
+O estudo utiliza um dataset bem conhecido no domínio da previsão de doenças cardíacas, geralmente derivado do Cleveland Heart Disease dataset. Este conjunto de dados inclui diversas variáveis relevantes para o diagnóstico de doenças cardíacas, tais como:
 
-O _Heart Disease Prediction App_, da Nevon Projects, é um projeto voltado para demonstração e aprendizado, geralmente oferecido como um kit para estudantes e desenvolvedores que desejam entender e implementar tecnologias de machine learning em aplicações médicas. Como ferramenta de estudo, ele um exemplo de aplicação móvel projetada para auxiliar os usuários na avaliação do risco de desenvolver doenças cardíacas. Assim como outros aplicativos similares, como o _My Heart_, o _Heart Disease Prediction App_ permite que o usuário insira dados pessoais como idade, gênero, pressão arterial, níveis de colesterol e hábitos de vida, como tabagismo e atividade física. Com base nesses dados, o aplicativo utiliza modelos preditivos, baseados em técnicas de machine learning, para calcular a probabilidade de o usuário desenvolver uma condição cardíaca.
+- Idade: Idade do paciente.
+- Sexo: Gênero do paciente.
+- Pressão arterial em repouso: Medida da pressão arterial em repouso (mm Hg).
+- Colesterol sérico: Níveis de colesterol sérico (mg/dL).
+- Glicemia em jejum: Indicador se a glicemia em jejum é maior que 120 mg/dL.
+- Resultados do eletrocardiograma (ECG): Inclui anormalidades específicas.
+- Frequência cardíaca máxima atingida: Durante exercício físico.
+- Angina induzida por exercício: Se o paciente apresenta dor no peito induzida por esforço.
+- Depressão do segmento ST: Comparação entre o repouso e o exercício.
+- Pico do segmento ST: Tipo de anomalia no ECG.
+- Número de vasos principais coloridos por fluoroscopia: Indicador de bloqueios nas artérias.
+- Talassemia: Presença ou ausência de um distúrbio genético.
 
-O aplicativo utiliza o _Heart Disease Dataset_ disponível na UCI Machine Learning Repository para realizar suas análises preditivas. Esse dataset é amplamente usado em estudos acadêmicos e aplicações de machine learning para treinar modelos que possam prever o risco de doenças cardíacas com base em dados pessoais dos usuários.
+Este conjunto de dados foi escolhido devido à sua relevância clínica e sua ampla utilização em pesquisas anteriores, o que permite comparações diretas com outros estudos na área.
 
-#### Detalhes do Dataset: ####
-- Fonte: UCI Machine Learning Repository.
-- Objetivo: O objetivo principal do dataset é prever a presença de doenças cardíacas em pacientes, classificando-os em risco alto ou baixo.
-- Características: O dataset inclui 14 atributos que são comumente associados ao risco de doenças cardíacas:
-1. Age (Idade): Idade do paciente em anos.
-2. Sex (Sexo):
-    - 1: Masculino
-    - 0: Feminino
-3. Chest Pain Type (Tipo de Dor no Peito):
-    - 1: Angina típica
-    - 2: Angina atípica
-    - 3: Dor não relacionada à angina
-    - 4: Assintomático
-4. Resting Blood Pressure (Pressão Arterial em Repouso): Pressão arterial em repouso medida em mm Hg.
-5. Serum Cholesterol (Colesterol Sérico): Nível de colesterol sérico em mg/dl.
-6. Fasting Blood Sugar (Glicose em Jejum): Se o nível de açúcar no sangue em jejum é maior que 120 mg/dl.
-    - 1: Verdadeiro
-    - 0: Falso
-7. Resting Electrocardiographic Results (Resultados do Eletrocardiograma em Repouso):
-    - 0: Normal
-    - 1: Anormalidade na onda ST-T (inversão da onda T e/ou elevação ou depressão de ST > 0,05 mV)
-    - 2: Hipertrofia ventricular esquerda provável ou definitiva
-8. Maximum Heart Rate Achieved (Frequência Cardíaca Máxima Atingida): A frequência cardíaca máxima alcançada durante o teste de esforço.
-9. Exercise Induced Angina (Angina Induzida por Exercício):
-    - 1: Sim
-    - 0: Não
-10. ST Depression Induced by Exercise Relative to Rest (Depressão de ST Induzida por Exercício em Relação ao Repouso): Medida da depressão do segmento ST durante o exercício em comparação com o repouso.
-11. Slope of the Peak Exercise ST Segment (Inclinação do Segmento ST no Pico do Exercício):
-    - 1: Inclinação ascendente
-    - 2: Plana
-    - 3: Inclinação descendente
-12. Number of Major Vessels Colored by Fluoroscopy (Número de Vasos Principais Coloridos por Fluoroscopia): Número de vasos principais (0-3) coloridos por fluoroscopia.
-13. Thalassemia (Talassemia):
-    - 3: Normal
-    - 6: Defeito fixo
-    - 7: Defeito reversível
-14. Target (Meta): Esta é a variável de saída que indica a presença de doença cardíaca.
-    - 0: Não tem doença cardíaca
-    - 1: Tem doença cardíaca
+#### 3. Abordagens e Algoritmos Utilizados
+O autor implementa vários algoritmos de machine learning para prever doenças cardíacas. As principais abordagens exploradas no artigo incluem:
 
-O aplicativo utiliza esses dados para treinar modelos de machine learning, que são então empregados para fornecer predições de risco de doenças cardíacas com base nas entradas do usuário.
+- Regressão Logística: Um modelo de regressão linear aplicado a problemas de classificação binária.
+  - Parâmetros utilizados: Regularização L2, taxa de aprendizado ajustada.
 
-### Resultados ###
+- K-Nearest Neighbors (KNN): Algoritmo baseado em instâncias que classifica os dados com base na proximidade dos pontos de dados.
+  - Parâmetros utilizados: Número de vizinhos (k=5), distância euclidiana.
 
- - **Avaliações de Usuários:** Como o Heart Disease Prediction App da Nevon Projects é voltado para estudantes e desenvolvedores, o feedback frequentemente foca em sua utilidade como ferramenta de aprendizado em vez de seu uso clínico direto. Usuários geralmente consideram o projeto uma boa introdução ao uso de machine learning em saúde.
-- **Aplicações Práticas:** Como o aplicativo é mais um protótipo, não há relatos amplamente documentados sobre seu uso em cenários clínicos ou sua aceitação por profissionais de saúde.
+- Support Vector Machine (SVM): Algoritmo que encontra o hiperplano que melhor separa as classes.
+  - Parâmetros utilizados: Kernel radial basis function (RBF), parâmetro de regularização (C=1), parâmetro do kernel (gamma).
+
+- Árvore de Decisão: Algoritmo de aprendizado supervisionado que particiona o espaço de dados em sub-regiões baseadas em features.
+  - Parâmetros utilizados: Critério de entropia, profundidade máxima da árvore.
+
+- Random Forest: Conjunto de árvores de decisão para melhorar a robustez e reduzir o overfitting.
+  - Parâmetros utilizados: Número de árvores (100), profundidade máxima, critério de entropia.
+
+#### 4. Métricas de Avaliação
+Para avaliar o desempenho dos modelos, o autor utiliza diversas métricas de avaliação, destacando:
+
+- Acurácia: A porcentagem de previsões corretas sobre o total de previsões feitas.
+- Precisão (Precision): A proporção de verdadeiros positivos sobre o total de positivos preditos.
+- Recall: A proporção de verdadeiros positivos sobre o total de reais positivos.
+- F1-Score: A média harmônica entre precisão e recall, oferecendo um equilíbrio entre ambas.
+- Matriz de Confusão: Representação tabular que permite a visualização de verdadeiros e falsos positivos/negativos.
+
+Essas métricas foram escolhidas para oferecer uma visão abrangente do desempenho de cada modelo, especialmente considerando a natureza balanceada ou desbalanceada dos dados.
+
+#### 5. Resultados Obtidos
+Os resultados mostraram que o Random Forest apresentou o melhor desempenho geral, com acurácia superior a 85%, seguido pela Support Vector Machine (SVM). A regressão logística e o KNN também tiveram desempenhos aceitáveis, mas com menor acurácia e precisão. O autor conclui que a escolha do algoritmo deve ser baseada tanto na performance quanto na interpretabilidade do modelo, com o Random Forest sendo uma excelente escolha para a tarefa de previsão de doenças cardíacas devido à sua alta precisão e robustez contra overfitting.
+
+#### Referências:
+
+Yadav, L. (2024). Heart Disease Prediction Using Machine Learning. Disponível em: https://www.researchgate.net/profile/Lowlesh-Yadav-2/publication/382530262_Heart_Disease_Prediction_Using_Machine_Learning/links/66a21be4c6e41359a83c0853/Heart-Disease-Prediction-Using-Machine-Learning.pdf. Acesso em 01/09/2024.
 
 
-
-### Prevendo Doenças Cardiovasculares com Machine Learning ###
+### Prevendo Doenças Cardiovasculares com Machine Learning 
 Um estudo sobre predição de doenças cardíacas.
 
-## Objetivo ##
+#### 1. Objetivo 
 
 O objetivo dos componentes do projeto é elaborar uma ferramenta auxiliar que usa aprendizado de máquina. Com isso, essa solução indicará aos profissionais da saúde o melhor tratamento para os seus pacientes com base em seus parâmetros.
 
-## Sobre o problema ##
+#### 2. Introdução ao Problema 
 As doenças cardíacas, uma das principais preocupações globais de saúde, têm sido alvo de estudos aprofundados, e o campo do aprendizado de máquina tem se destacado como uma ferramenta promissora para lidar com essa questão crucial.
 
-## Os dados (variáveis/colunas) ##
-Nomes e traduções:
+#### 3. Características do Dataset Utilizado 
+Nomes | traduções:
 
-age: idade em anos
-sex: sexo (1 = masc 0 = fem)
-cp: chest pain type (dor no peito)
-Valor 0: asymptomatic (assintomática)
-Valor 1: typical angina (típica)
-Valor 2: atypical angina (atípica)
-Valor 3: non-anginal pain (não anginosa)
-trestbps: resting blood pressure (in mm Hg on admission to the hospital) — pressão arterial de repouso (em mm Hg na admissão ao hospital)
-chol: serum cholestoral in mg/dl — colesterol sérico em mg/dl
-restecg: resting electrocardiographic results (values 0, 1, 2) — Resultados eletrocardiográficos em repouso: Valores 0, 1, 2.
-fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false) — glicemia em jejum
-thalach: maximum heart rate achieved — Frequência cardíaca máxima atingida
-exang: exercise induced angina (1 = yes; 0 = no) — angina induzida por exercício
-oldpeak: ST depression induced by exercise relative to rest — Depressão de ST induzida por exercício em relação ao
-slope(inclinação): a inclinação do pico do segmento ST do exercício
-Valor 0: inclinação ascendente
-Valor 1: plano
-Valor 2: descida<br>
-ca: number of major vessels (0–3) colored by flouroscopy — Número de vasos principais coloridos por fluoroscopia:
-Valor 0: Normal
-Valor 1: Com onda ST-T anormal
-Valor 2: Mostrando provável (ou definida) hipertrofia do ventrículo esquerdo
-thal: 1 = (normal; 2 = fixed defect; 3 = reversable defect)Talassemia:
-normal
-problema corrigido
-problema reversível
-target: 0 = não possui doença cardíaca, 1 = possui doença cardíaca
+- age | idade em anos
+- sex | sexo (1 = masc 0 = fem)
+- cp (chest pain type) | tipo de dor no peito
+  - Valor 0: asymptomatic | assintomática
+  - Valor 1: typical angina | típica
+  - Valor 2: atypical angina | atípica
+  - Valor 3: non-anginal pain | não anginosa
+- trestbps: resting blood pressure (in mm Hg on admission to the hospital) | pressão arterial de repouso (em mm Hg na admissão ao hospital)
+- chol: serum cholestoral in mg/dl | colesterol sérico em mg/dl
+- restecg: resting electrocardiographic results (values 0, 1, 2) | Resultados eletrocardiográficos em repouso: Valores 0, 1, 2.
+- fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false) | glicemia em jejum
+- thalach: maximum heart rate achieved | Frequência cardíaca máxima atingida
+- exang: exercise induced angina (1 = yes; 0 = no) | angina induzida por exercício
+- oldpeak: ST depression induced by exercise relative to rest | Depressão de ST induzida por exercício em relação ao
+- slope | inclinação: a inclinação do pico do segmento ST do exercício
+  - Valor 0: inclinação ascendente
+  - Valor 1: plano
+  - Valor 2: descida<br>
+- ca: number of major vessels (0–3) colored by flouroscopy | Número de vasos principais coloridos por fluoroscopia:
+  - Valor 0: Normal
+  - Valor 1: Com onda ST-T anormal
+  - Valor 2: Mostrando provável (ou definida) hipertrofia do ventrículo esquerdo
+- thal: 1 = normal; 2 = fixed defect; 3 = reversable defect) | Talassemia: 1 = normal; 2 = problema corrigido; 3 = problema reversível
+- target: 0 = não possui doença cardíaca, 1 = possui doença cardíaca
 —
 Link do Dataset: https://archive.ics.uci.edu/dataset/45/heart+disease
 
-## Conclusão ##
+#### 4. Conclusão 
 Nesse código gigantesco estudamos algumas variáveis e plots para criarmos modelos de Machine Learning que pudessem prever se, com novas entradas, uma predição assertiva poessa ser feita. Obtivemos bons resultados nas máquinas preditivas mas todo ajuste é bem vindo e o objetivo é aumentar cada mais mais sua capacidade de prever corretamente.
-
-## Fonte ##
-**https://medium.com/@jonatasliberato/prevendo-doen%C3%A7as-cardiovasculares-2a2c3dd68789**
 
 # Descrição do _dataset_ selecionado - Marcus
 
@@ -174,7 +181,6 @@ Ao analisar cada um dos atributos desta base de dados, foi possível concluir qu
 Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
 
 
-
 # Canvas analítico
 
 Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analítico tem o papel de registrar a organização das ideias e apresentar o modelo de negócio. O Canvas Analítico deverá ser preenchido integralmente mesmo que você não tenha "tantas certezas".
@@ -184,9 +190,16 @@ Nesta seção, você deverá estruturar o seu Canvas Analítico. O Canvas Analí
 
 # Referências
 
-Nevon Projects. (n.d.). Heart Disease Prediction App. Nevon Projects. Disponível em: https://nevonprojects.com/android-heart-disease-prediction-app/.
+**Institute for Health Metrics and Evaluation.** New study reveals latest data on global burden of cardiovascular disease. Institute for Health Metrics and Evaluation. Disponível em: https://www.healthdata.org/news-release/new-study-reveals-latest-data-global-burden-cardiovascular-disease. Acesso em: 01/09/2024.
+
+**Centers for Disease Control and Prevention (CDC).** Heart Disease Facts. Centers for Disease Control and Prevention. Disponível em: https://www.cdc.gov/heartdisease/facts.htm. Acesso em: 01/09/2024.
+
+**Our World in Data.** Death rate from cardiovascular diseases. Our World in Data. Disponível em: https://ourworldindata.org/grapher/cardiovascular-disease-death-rates. Acesso em: 01/09/2024.
 UCI Machine Learning Repository. (n.d.). Heart Disease Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/heart+disease.
 
+YADAV, L. (2024). Heart Disease Prediction Using Machine Learning. Disponível em: https://www.researchgate.net/profile/Lowlesh-Yadav-2/publication/382530262_Heart_Disease_Prediction_Using_Machine_Learning/links/66a21be4c6e41359a83c0853/Heart-Disease-Prediction-Using-Machine-Learning.pdf. Acesso em 01/09/2024.
+
+LIBERATO, J. (2024). Prevendo doenças cardiovasculares. Medium. Disponível em: https://medium.com/@jonatasliberato/prevendo-doen%C3%A7as-cardiovasculares-2a2c3dd68789. Acesso em: 27/08/20244.
 
 FREESZ, Larissa e PINHEIRO, Paula. ENTENDO A PRESSÃO ARTERIAL. **UFMG**, Minas Gerais, 2011. Disponível em <https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf>. Acesso em: 28 de ago. de 2024.
 
