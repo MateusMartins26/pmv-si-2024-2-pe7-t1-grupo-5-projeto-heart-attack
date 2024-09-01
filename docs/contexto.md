@@ -216,11 +216,11 @@ Esta pesquisa usou um conjunto de dados de doenças cardíacas do JUH em Amã, J
 O conjunto de dados compreendia predominantemente atributos binários, denotando a presença ou ausência de características. No entanto, características específicas, como tabagismo e ritmo cardíaco, tinham vários valores para indicar a gravidade. Gênero e valores numéricos, como idade, pressão arterial e pulso, também faziam parte do conjunto de dados. A Figura 8 ilustra a planilha de dados usada para reunir variáveis ​​do paciente, destacando a prevalência de valores binários para muitos atributos e, nos casos em que um atributo estava presente, discernindo a gravidade categorizando-a como grave ou leve.
 
 
-- ![image](https://onlinelibrary.wiley.com/cms/asset/ddda8f2c-2671-4c66-9671-2f0422d9228e/acis5080332-fig-0008-m.jpg)
+- ![image](/src/images/Patient%20Datasheet.PNG)
 
 #### Conclusão ##
 
-Os resultados da pesquisa têm implicações significativas para o campo médico, oferecendo suporte valioso para identificação precoce de doenças cardíacas, avaliação de risco e planejamento de tratamento personalizado.
+Os modelos desenvolvidos possuem o potencial de auxiliar profissionais de saúde na tomada de decisões, otimizando a alocação de recursos e facilitando a entrega eficiente de serviços de saúde. No entanto, é crucial reconhecer as limitações identificadas do estudo, abrangendo preocupações relacionadas à representatividade dos dados, dimensionalidade dos dados e interpretabilidade do modelo. Consequentemente, há uma necessidade imperativa de mais pesquisas para abordar essas limitações e aumentar a robustez e aplicabilidade dos modelos desenvolvidos em cenários de saúde do mundo real.
 
 Fonte:https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332
 
