@@ -1,6 +1,14 @@
 # Introdução
 
-Texto descritivo introdutório apresentando a visão geral do projeto a ser desenvolvido considerando o contexto em que ele se insere, os objetivos gerais, a justificativa e o público-alvo do projeto.
+As doenças cardíacas permanecem como uma das principais causas de mortalidade tanto no Brasil quanto no mundo, representando um desafio significativo para os sistemas de saúde globais. Dados recentes indicam um aumento contínuo no número de óbitos relacionados a doenças cardiovasculares, atribuídos a fatores como envelhecimento populacional, hábitos de vida inadequados e exposição a poluentes ambientais. Este cenário reforça a necessidade de estratégias inovadoras e eficazes para a prevenção, diagnóstico e tratamento dessas condições de saúde.
+
+Nesse contexto, o aprendizado de máquina surge como uma ferramenta promissora para aprimorar a detecção e o manejo de doenças cardíacas. Ao analisar grandes volumes de dados clínicos, algoritmos inteligentes podem identificar padrões complexos e prever com maior precisão o risco de ocorrência de eventos cardiovasculares em indivíduos, considerando uma ampla gama de fatores de risco e características pessoais. Essa abordagem permite uma intervenção médica mais precoce e personalizada, aumentando as chances de sucesso no tratamento e redução da mortalidade.
+
+O projeto em questão tem como objetivo principal desenvolver um modelo preditivo utilizando técnicas avançadas de aprendizado de máquina para estimar o risco de doenças coronarianas. A partir da análise de um conjunto abrangente de dados públicos, busca-se identificar os principais fatores que influenciam o desenvolvimento dessas doenças e, consequentemente, recomendar os tratamentos mais adequados para cada perfil de paciente. Essa ferramenta pretende auxiliar profissionais de saúde na tomada de decisões clínicas mais informadas e precisas.
+
+A justificativa para o desenvolvimento deste projeto baseia-se na urgência de soluções eficazes frente à crescente carga das doenças cardiovasculares na sociedade. A implementação de modelos preditivos avançados pode não apenas melhorar os desfechos clínicos dos pacientes, mas também otimizar a alocação de recursos no sistema de saúde, promovendo uma assistência mais eficiente e sustentável. Além disso, a adoção de tecnologias de inteligência artificial na área médica representa um passo significativo rumo à modernização e inovação dos cuidados em saúde.
+
+O público-alvo principal desta iniciativa são os médicos e profissionais de saúde que atuam diretamente no diagnóstico e tratamento de doenças cardíacas. Ao fornecer uma ferramenta de suporte baseada em evidências e dados robustos, espera-se facilitar o processo de decisão clínica e melhorar a qualidade da assistência prestada aos pacientes. Indiretamente, pacientes e instituições de saúde também se beneficiam através de tratamentos mais eficazes e da potencial redução de custos associados ao manejo das doenças cardiovasculares.
 
 ## Problema
 
@@ -226,7 +234,7 @@ Fonte:https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332
 
 # Descrição do _dataset_ selecionado - Marcus
 
-O dataset escolhido para o tema contém atributos pertinentes para criação do modelo para deduzir se um paciente possui ou não o risco de ter um ataque cardíaco. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
+O dataset escolhido para o tema contém atributos pertinentes para criação do modelo listando - dentro de um cenário em que todos os avaliados possuem problemas cardiovasculares - informações gerais sobre cada paciente analisado. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
 
 
 * Gênero: atributo do tipo textual que define se o paciente é um homem ou uma mulher;
@@ -241,7 +249,7 @@ O dataset escolhido para o tema contém atributos pertinentes para criação do 
 
 Ao analisar cada um dos atributos desta base de dados, foi possível concluir que não será necessário realizar uma limpeza nos dados, pois não foi encontrado valores inesperados dentro do dataset.
 
-Link para o nosso dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
+Link para o dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-dataset 
 
 
 # Canvas analítico
