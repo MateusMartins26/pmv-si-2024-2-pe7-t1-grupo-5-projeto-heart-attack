@@ -161,7 +161,7 @@ Nesse código gigantesco estudamos algumas variáveis e plots para criarmos mode
 
 O trabalho teve como objetivo desenvolver um Sistema de Suporte à Decisão na detecção de doenças cardíacas que utiliza a técnica de mineração de dados com melhor precisão e desempenho entre Naïve Bayes, Máquina de Vetor de Suporte, Regressão Logística Simples, Floresta Aleatória e Rede Neural Artificial (RNA) etc.
 
-#### 2. Introdução ao Pproblema ##
+#### 2. Introdução ao Problema ##
 
 Donças cardíacas são as principais causas de morte em todo o mundo. De acordo com a pesquisa da Organização Mundial da Saúde (OMS), 17,5 milhões de mortes globais ocorrem devido a ataques cardíacos e derrames. Mais de 75% das mortes por doenças cardiovasculares ocorrem principalmente em países de renda média e baixa. Além disso, 80% das mortes que ocorrem por doenças cardiovasculares (DCVs) são devido a derrame e ataque cardíaco. Portanto, a detecção de anormalidades cardíacas no estágio inicial e ferramentas para a previsão de doenças cardíacas podem salvar muitas vidas e ajudar os médicos a elaborar um plano de tratamento eficaz que, em última análise, reduza a taxa de mortalidade devido a doenças cardiovasculares. 
 
@@ -180,6 +180,49 @@ Atributos que estão relacionados a diferentes parâmetros do sistema cardiovasc
 Sobre comparação entre vários algoritmos de aprendizado de máquina, foi descoberto que nenhum algoritmo atingiu um nível de precisão de mais de 90 por cento na previsão de doenças cardíacas usando o mesmo número e tipos de recursos usados ​​neste estudo. Embora um modelo do aplicativo de detecção de doenças cardíacas baseado em nuvem seja representado aqui, os trabalhos futuros serão focados no desenvolvimento de um servidor dedicado e dados.
  
 Fonte: https://www.scirp.org/journal/paperinformation?paperid=88650#ref15
+
+
+### Melhorando a previsão de ataques cardíacos com aprendizado de máquina: um estudo no Jordan University Hospital(ALSHRAIDEH, Mohammad, 2024) ###
+
+
+#### 1. Objetivo ##
+
+O objetivo do estudo apresentado é acrescer a precisão de previsão utilizando uma abordagem abrangente, incluindo pré-processamento de dados, seleção de recursos e desenvolvimento de modelos.
+
+
+#### 2. Introdução ao Problema ## 
+
+Doença cardíaca é uma das principais causas globais de mortalidade, e seu diagnóstico oportuno apresenta desafios significativos devido à sobreposição de sintomas com outras condições de saúde. Essa complexidade pode complicar o tratamento significativamente quando a detecção é tardia.
+
+#### 3. Detalhes do Dataset: ####
+
+Esta pesquisa usou um conjunto de dados de doenças cardíacas do JUH em Amã, Jordânia, para testes e treinamento do sistema. O conjunto de dados compreendeu um total de 486 casos. Destes, 324 instâncias estão associadas a pacientes diagnosticados com doenças cardíacas. Os 162 casos restantes pertencem a pacientes sem doenças cardíacas que já visitaram clínicas de cardiologia. Incluiu 58 variáveis ​​essenciais para o diagnóstico de doenças cardíacas, categorizadas da seguinte forma:
+
+
+
+
+* (1) Informações básicas do paciente (por exemplo, idade e sexo);
+
+* (2) Histórico médico do paciente (10 fatores);
+
+* (3) Sintomas relatados (16 fatores);
+
+* (4) Resultados do exame físico (10 fatores);
+
+* (5) Resultados do laboratório de sangue (7 fatores);
+
+* (6) Resultados do ECG (eletrocardiograma) (12 fatores);
+
+O conjunto de dados compreendia predominantemente atributos binários, denotando a presença ou ausência de características. No entanto, características específicas, como tabagismo e ritmo cardíaco, tinham vários valores para indicar a gravidade. Gênero e valores numéricos, como idade, pressão arterial e pulso, também faziam parte do conjunto de dados. A Figura 8 ilustra a planilha de dados usada para reunir variáveis ​​do paciente, destacando a prevalência de valores binários para muitos atributos e, nos casos em que um atributo estava presente, discernindo a gravidade categorizando-a como grave ou leve.
+
+
+- ![image](https://onlinelibrary.wiley.com/cms/asset/ddda8f2c-2671-4c66-9671-2f0422d9228e/acis5080332-fig-0008-m.jpg)
+
+#### Conclusão ##
+
+Os resultados da pesquisa têm implicações significativas para o campo médico, oferecendo suporte valioso para identificação precoce de doenças cardíacas, avaliação de risco e planejamento de tratamento personalizado.
+
+Fonte:https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332
 
 # Descrição do _dataset_ selecionado - Marcus
 
