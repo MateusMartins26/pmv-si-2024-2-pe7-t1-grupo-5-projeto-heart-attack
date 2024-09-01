@@ -113,11 +113,6 @@ Essas métricas foram escolhidas para oferecer uma visão abrangente do desempen
 #### 5. Resultados Obtidos
 Os resultados mostraram que o Random Forest apresentou o melhor desempenho geral, com acurácia superior a 85%, seguido pela Support Vector Machine (SVM). A regressão logística e o KNN também tiveram desempenhos aceitáveis, mas com menor acurácia e precisão. O autor conclui que a escolha do algoritmo deve ser baseada tanto na performance quanto na interpretabilidade do modelo, com o Random Forest sendo uma excelente escolha para a tarefa de previsão de doenças cardíacas devido à sua alta precisão e robustez contra overfitting.
 
-#### Referências:
-
-Yadav, L. (2024). Heart Disease Prediction Using Machine Learning. Disponível em: https://www.researchgate.net/profile/Lowlesh-Yadav-2/publication/382530262_Heart_Disease_Prediction_Using_Machine_Learning/links/66a21be4c6e41359a83c0853/Heart-Disease-Prediction-Using-Machine-Learning.pdf. Acesso em 01/09/2024.
-
-
 ### Prevendo Doenças Cardiovasculares com Machine Learning 
 Um estudo sobre predição de doenças cardíacas.
 
