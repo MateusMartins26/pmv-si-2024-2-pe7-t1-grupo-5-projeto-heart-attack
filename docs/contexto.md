@@ -150,36 +150,32 @@ Nomes | traduções:
   - Valor 2: Mostrando provável (ou definida) hipertrofia do ventrículo esquerdo
 - thal: 1 = normal; 2 = fixed defect; 3 = reversable defect) | Talassemia: 1 = normal; 2 = problema corrigido; 3 = problema reversível
 - target: 0 = não possui doença cardíaca, 1 = possui doença cardíaca
-—
-Link do Dataset: https://archive.ics.uci.edu/dataset/45/heart+disease
 
 #### 4. Conclusão 
 Nesse código gigantesco estudamos algumas variáveis e plots para criarmos modelos de Machine Learning que pudessem prever se, com novas entradas, uma predição assertiva poessa ser feita. Obtivemos bons resultados nas máquinas preditivas mas todo ajuste é bem vindo e o objetivo é aumentar cada mais mais sua capacidade de prever corretamente.
 
-### Detecção de doenças cardíacas usando algoritmos de aprendizado de máquina e um sistema de monitoramento de saúde cardiovascular em tempo real ###
+### Detecção de doenças cardíacas usando algoritmos de aprendizado de máquina e um sistema de monitoramento de saúde cardiovascular em tempo real (World Journal of Engineering and Technology, 2018) ###
 
 
-## Objetivo ##
+#### 1. Objetivo ##
 
 O trabalho teve como objetivo desenvolver um Sistema de Suporte à Decisão na detecção de doenças cardíacas que utiliza a técnica de mineração de dados com melhor precisão e desempenho entre Naïve Bayes, Máquina de Vetor de Suporte, Regressão Logística Simples, Floresta Aleatória e Rede Neural Artificial (RNA) etc.
 
-## Sobre o problema ##
+#### 2. Introdução ao Pproblema ##
 
 Donças cardíacas são as principais causas de morte em todo o mundo. De acordo com a pesquisa da Organização Mundial da Saúde (OMS), 17,5 milhões de mortes globais ocorrem devido a ataques cardíacos e derrames. Mais de 75% das mortes por doenças cardiovasculares ocorrem principalmente em países de renda média e baixa. Além disso, 80% das mortes que ocorrem por doenças cardiovasculares (DCVs) são devido a derrame e ataque cardíaco. Portanto, a detecção de anormalidades cardíacas no estágio inicial e ferramentas para a previsão de doenças cardíacas podem salvar muitas vidas e ajudar os médicos a elaborar um plano de tratamento eficaz que, em última análise, reduza a taxa de mortalidade devido a doenças cardiovasculares. 
 
-#### Detalhes do Dataset: ####
-- Fonte: Repositório de Aprendizado de Máquina da UCI: Conjunto de Dados de Doenças Cardíacas.
-http://archive.ics.uci.edu/ml/datasets/Heart+Disease
+#### 3. Detalhes do Dataset: ####
+O dataset contém um total de 303 registros de pacientes. Estes dados foram originalmente coletados de quatro diferentes fontes médicas, mas o conjunto de dados completo disponível na UCI é composto principalmente pelos dados do Cleveland Clinic Foundation.
 
-- Características: O Dataset obtido para a aplicação de mineração de dados inclui 13 tipos de entrada Dois bancos de dados de doenças cardíacas disponíveis publicamente com o mesmo tipo e número de atributos são mesclados para formar um conjunto de dados maior e obter maior precisão.
+O Dataset obtido para a aplicação de mineração de dados inclui 13 tipos de entrada. Dois bancos de dados de doenças cardíacas disponíveis publicamente com o mesmo tipo e número de atributos são mesclados para formar um conjunto de dados maior e obter maior precisão.
   
-- Explicação de 13 atributos de entrada usados ​​para formação e validação do modelo.
 - ![image](https://github.com/user-attachments/assets/7a777302-56c1-4d8e-98e3-6c5320e10b20)
 
 
 Atributos que estão relacionados a diferentes parâmetros do sistema cardiovascular. Para o design do sistema de classificação e predição baseado em nuvem, um atributo-chave foi projetado (ou seja, o número de celular do paciente que atua como o identificador exclusivo do paciente). Atributos previsíveis recebem uma escala numérica para determinar os dois grupos classificados (ou seja, Saudável e Com doença cardíaca). A Tabela 1 mostra os atributos de entrada contendo um total de 13 características fisiológicas retiradas dos dois conjuntos de dados mencionados anteriormente usados ​​para qualquer tipo de predição de anormalidade cardíaca.
 
- ####  Conclusão  ####
+ ####  4. Conclusão  ####
 
 Sobre comparação entre vários algoritmos de aprendizado de máquina, foi descoberto que nenhum algoritmo atingiu um nível de precisão de mais de 90 por cento na previsão de doenças cardíacas usando o mesmo número e tipos de recursos usados ​​neste estudo. Embora um modelo do aplicativo de detecção de doenças cardíacas baseado em nuvem seja representado aqui, os trabalhos futuros serão focados no desenvolvimento de um servidor dedicado e dados.
  
@@ -224,6 +220,8 @@ UCI Machine Learning Repository. (n.d.). Heart Disease Data Set. Disponível em:
 YADAV, L. (2024). Heart Disease Prediction Using Machine Learning. Disponível em: https://www.researchgate.net/profile/Lowlesh-Yadav-2/publication/382530262_Heart_Disease_Prediction_Using_Machine_Learning/links/66a21be4c6e41359a83c0853/Heart-Disease-Prediction-Using-Machine-Learning.pdf. Acesso em 01/09/2024.
 
 LIBERATO, J. (2024). Prevendo doenças cardiovasculares. Medium. Disponível em: https://medium.com/@jonatasliberato/prevendo-doen%C3%A7as-cardiovasculares-2a2c3dd68789. Acesso em: 27/08/20244.
+
+SCIRP. (2018). A Review of Machine Learning Techniques for Heart Disease Prediction. Scientific Research Publishing. Disponível em: https://www.scirp.org/journal/paperinformation?paperid=88650#ref15. Acesso em: 01/09/2024.
 
 FREESZ, Larissa e PINHEIRO, Paula. ENTENDO A PRESSÃO ARTERIAL. **UFMG**, Minas Gerais, 2011. Disponível em <https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2013/12/pag14-Ciencia.pdf>. Acesso em: 28 de ago. de 2024.
 
