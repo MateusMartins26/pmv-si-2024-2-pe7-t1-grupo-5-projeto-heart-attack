@@ -156,6 +156,30 @@ Link do Dataset: https://archive.ics.uci.edu/dataset/45/heart+disease
 #### 4. Conclusão 
 Nesse código gigantesco estudamos algumas variáveis e plots para criarmos modelos de Machine Learning que pudessem prever se, com novas entradas, uma predição assertiva poessa ser feita. Obtivemos bons resultados nas máquinas preditivas mas todo ajuste é bem vindo e o objetivo é aumentar cada mais mais sua capacidade de prever corretamente.
 
+### Detecção de doenças cardíacas usando algoritmos de aprendizado de máquina e um sistema de monitoramento de saúde cardiovascular em tempo real ###
+
+
+## Objetivo ##
+
+O trabalho teve como objetivo desenvolver um Sistema de Suporte à Decisão na detecção de doenças cardíacas que utiliza a técnica de mineração de dados com melhor precisão e desempenho entre Naïve Bayes, Máquina de Vetor de Suporte, Regressão Logística Simples, Floresta Aleatória e Rede Neural Artificial (RNA) etc.
+
+## Sobre o problema ##
+
+Donças cardíacas são as principais causas de morte em todo o mundo. De acordo com a pesquisa da Organização Mundial da Saúde (OMS), 17,5 milhões de mortes globais ocorrem devido a ataques cardíacos e derrames. Mais de 75% das mortes por doenças cardiovasculares ocorrem principalmente em países de renda média e baixa. Além disso, 80% das mortes que ocorrem por doenças cardiovasculares (DCVs) são devido a derrame e ataque cardíaco. Portanto, a detecção de anormalidades cardíacas no estágio inicial e ferramentas para a previsão de doenças cardíacas podem salvar muitas vidas e ajudar os médicos a elaborar um plano de tratamento eficaz que, em última análise, reduza a taxa de mortalidade devido a doenças cardiovasculares. 
+
+#### Detalhes do Dataset: ####
+- Fonte: Repositório de Aprendizado de Máquina da UCI: Conjunto de Dados de Doenças Cardíacas.
+http://archive.ics.uci.edu/ml/datasets/Heart+Disease
+
+- Características: O Dataset obtido para a aplicação de mineração de dados inclui 13 tipos de entrada Dois bancos de dados de doenças cardíacas disponíveis publicamente com o mesmo tipo e número de atributos são mesclados para formar um conjunto de dados maior e obter maior precisão.
+  
+- Explicação de 13 atributos de entrada usados ​​para formação e validação do modelo.
+
+Atributos que estão relacionados a diferentes parâmetros do sistema cardiovascular. Para o design do sistema de classificação e predição baseado em nuvem, um atributo-chave foi projetado (ou seja, o número de celular do paciente que atua como o identificador exclusivo do paciente). Atributos previsíveis recebem uma escala numérica para determinar os dois grupos classificados (ou seja, Saudável e Com doença cardíaca). A Tabela 1 mostra os atributos de entrada contendo um total de 13 características fisiológicas retiradas dos dois conjuntos de dados mencionados anteriormente usados ​​para qualquer tipo de predição de anormalidade cardíaca.
+
+- ![image](https://github.com/user-attachments/assets/8625b5fd-cd7c-42cf-ab38-9f7dca28a795)
+
+
 # Descrição do _dataset_ selecionado - Marcus
 
 O dataset escolhido para o tema contém atributos pertinentes para criação do modelo para deduzir se um paciente possui ou não o risco de ter um ataque cardíaco. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
