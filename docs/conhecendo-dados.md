@@ -29,6 +29,13 @@ Com essa medida, é realizado o cálculo da média de colesterol e após este pr
 Essa outra medida faz a divisão da média de colesterol das faixas etárias pela média geral de colesterol. Os valores gerados são úteis para se perceber a variação dos itens em relação à tendência central.
 
 
+Pessoas com colesterol alto possuem mais chance de sofrerem de ataque cardíaco?
+
+Segundo o Dr. Fernando Oliva afirmou que: “O excesso de colesterol é diretamente responsável por formar depósitos de gordura nas artérias, também conhecidos como placa de ateroma, podendo provocar com o tempo obstruções e até mesmo oclusões destes vasos. Consequentemente, os órgãos deixam de receber aporte sanguíneo, deixando de funcionar. No coração, isso é conhecido como infarto”. 
+
+Isso também pode ser mostrado no dataset escolhido pelos componentes, pois 92,51% dos pacientes possuem colesterol alto. Segue um gráfico que mostra o agrupamento desta informação
+
+![image](/src/images/Pacientes%20por%20%20Nível%20de%20Colesterol.png)
 
 ## Descrição dos achados
 
