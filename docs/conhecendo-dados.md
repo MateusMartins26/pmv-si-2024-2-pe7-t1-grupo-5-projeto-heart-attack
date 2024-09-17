@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e4a2a5c3-8bbb-44cc-8095-42ec05c0eda2)# Conhecendo os dados
+# Conhecendo os dados
 
 Nesta seção, deverá ser registrada uma detalhada análise descritiva e exploratória sobre a base de dados selecionada na Etapa 1 com o objetivo de compreender a estrutura dos dados, detectar eventuais _outliers_ e também, avaliar/detectar as relações existentes entre as variáveis analisadas.
 
