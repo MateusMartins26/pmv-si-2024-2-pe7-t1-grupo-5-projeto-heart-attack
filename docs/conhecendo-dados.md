@@ -73,7 +73,9 @@ Realizando o describe do Dataset, temos para as variáveis quantitativas com dad
 - Min (mínimo);
 - Quartis (25%. 50%, 75%);
 - Max (máximo).
+  
 Para as colunas que possuem variáveis qualitativas faremos uma análise e definiremos a melhor transformação dos dados para se tornarem booleanas ou numéricas.
+
 Importante: aqui começamos a ver algumas características, median 50% e mean média estão próximas, indicativo de formato parecido com distribuição normal, está bem distribuída, com comportamento regular.
 
 
