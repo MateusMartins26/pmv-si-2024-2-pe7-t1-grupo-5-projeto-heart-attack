@@ -37,7 +37,7 @@ Isso também pode ser mostrado no dataset escolhido pelos componentes, pois 92,5
 
 ![image](/src/images/Pacientes%20por%20%20Nível%20de%20Colesterol.png)
 
-Utilizando o Google Colab, conseguimos obter as informações abaixo:
+### Utilizando o Google Colab, conseguimos obter as informações abaixo:
 
 
 ![image](https://github.com/user-attachments/assets/057f62bb-73ee-45ba-a983-3000ab840a01)
