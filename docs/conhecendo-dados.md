@@ -40,6 +40,7 @@ Isso também pode ser mostrado no dataset escolhido pelos componentes, pois 92,5
 Utilizando o Google Colab, conseguimos obter as informações abaixo:
 
 ![image](https://github.com/user-attachments/assets/057f62bb-73ee-45ba-a983-3000ab840a01)
+
 O Dataset é composto por 8 colunas: 
 - Gender (Gênero Masculino e Feminino);
 - Age (Idade);
@@ -52,12 +53,15 @@ O Dataset é composto por 8 colunas:
 Temos também 1.000 rows (linhas) referente à dados de 1.000 pessoas participantes do estudo/pesquisa.
 
 ![image](https://github.com/user-attachments/assets/9e21d732-08c7-4cca-8eb7-d6f990d45edf)
+
 Das 8 colunas presentes no Dataset, 5 colunas apresentam dados do tipo objeto (Gender, Has Diabetes, Smoking Status Chest Pain Type, Treatment) sendo variáveis qualitativas e 3 colunas apresentam dados do tipo inteiro/int64 que são numéricas (Age, Blood Pressure, Cholesterol). 
 
 ![image](https://github.com/user-attachments/assets/21f7d0b3-aed6-4dcb-9d47-2205d19f5156)
+
 Importante destacar que não há dados nulos (linhas e colunas sem conteúdo) nesse Dataset. 
 
 ![image](https://github.com/user-attachments/assets/1dbfb213-7420-4129-8a40-f0f6f53371f5)
+
 Realizando o describe do Dataset, temos para as variáveis quantitativas com dados do tipo inteiro/int64 que são numéricas das colunas Age, Blood Pressure e Choleterol, e obtemos os parâmetros abaixo para cada uma das colunas:
 - Count (contagem);
 - Mean (média);
