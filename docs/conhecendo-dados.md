@@ -44,6 +44,7 @@ Para as colunas que possuem variáveis qualitativas faremos uma análise e defin
 Importante: aqui começamos a ver algumas características, median 50% e mean média estão próximas, indicativo de formato parecido com distribuição normal, está bem distribuída, com comportamento regular.
 
 ![image](https://github.com/user-attachments/assets/fdf340c6-dad0-4156-a379-2d32c551ef40)
+
 Verificamos que o estudo foi realizado com 1.000 pessoas, sendo: 510 Mulheres e 490 Homens, e que a média de idade para ambos os gêneros é de 60 anos.
 
 ## Análises Realizadas
