@@ -78,6 +78,37 @@ Para as colunas que possuem variáveis qualitativas faremos uma análise e defin
 
 Importante: aqui começamos a ver algumas características, median 50% e mean média estão próximas, indicativo de formato parecido com distribuição normal, está bem distribuída, com comportamento regular.
 
+Passo 1 : Formulando a Hipótese. 
+
+Teste de hipótese estatístico: A média da pressão arterial é superior a 130 ?  
+
+Hipótese Nula (H₀): A média da pressão arterial é menor ou igual a 130. 
+𝐻0: 𝜇 ≤ 130
+
+Hipótese Alternativa (H₁): A média da pressão arterial é superior a 130. 
+𝐻1: 𝜇 > 130
+
+Passo 2 : Estabelecendo as Regiões de Aceitação e Rejeição (RA ; RR);
+
+Para realizar o teste, é necessário calcular a média e o desvio padrão da amostra.
+
+Número de dados selecionados (n): 600 
+
+Média da amostra (xˉ) = 147.5 
+
+Desvio padrão da amostra (s) = 20.7 
+
+Utilizando a fórmula: ![image](https://github.com/user-attachments/assets/9121daea-4abd-4f6b-814d-67c55ad6a60d)
+
+t é aproximadamente = 20.7
+
+Passo 3 : Calculando a estatística do teste;
+
+Para um nível de significância  𝛼 de 0.05 , o valor crítico t para uma distribuição t com 599  para uma cauda (direita) é aproximadamente 1.645.
+
+Passo 4 : Concluindo o teste:
+
+Como o valor calculado de t (20.7) é muito maior do que o valor crítico (1.645), é rejeitado a hipótese nula, pois há evidências suficientes para concluir-se que a média da pressão arterial é significativamente superior a 130.
 
 ## Descrição dos achados
 
