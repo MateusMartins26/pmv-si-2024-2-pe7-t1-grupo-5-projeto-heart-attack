@@ -78,6 +78,8 @@ Para as colunas que possuem variáveis qualitativas faremos uma análise e defin
 
 Importante: aqui começamos a ver algumas características, median 50% e mean média estão próximas, indicativo de formato parecido com distribuição normal, está bem distribuída, com comportamento regular.
 
+Teste de Hipóteses
+
 Passo 1 : Formulando a Hipótese. 
 
 Teste de hipótese estatístico: A média da pressão arterial é superior a 130 ?  
