@@ -64,6 +64,7 @@ Com essa medida, é realizado o cálculo da média de colesterol e após este pr
 
 Essa outra medida faz a divisão da média de colesterol das faixas etárias pela média geral de colesterol. Os valores gerados são úteis para se perceber a variação dos itens em relação à tendência central.
 
+# Hipótese utilizada
 
 Pessoas com colesterol alto possuem mais chance de sofrerem de ataque cardíaco?
 
@@ -72,6 +73,8 @@ Segundo o Dr. Fernando Oliva afirmou que: “O excesso de colesterol é diretame
 Isso também pode ser mostrado no dataset escolhido pelos componentes, pois 92,51% dos pacientes possuem colesterol alto. Segue um gráfico que mostra o agrupamento desta informação. Basicamente foi adicionado uma coluna adicional no dataset para agrupar pacientes por colesterol alto e baixo(Acima de 160 mg/dL, de acordo com a Unimed) e a contagem dos pacientes do dataset.
 
 ![image](/src/images/Pacientes%20por%20%20Nível%20de%20Colesterol.png)
+
+Com isso, conclui-se que o nível de colesterol é um fator importante para causar ataques cardíacos. 
 
 
 Teste de Hipóteses
