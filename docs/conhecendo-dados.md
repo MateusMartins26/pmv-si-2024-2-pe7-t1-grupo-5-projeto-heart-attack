@@ -64,7 +64,7 @@ Com essa medida, é realizado o cálculo da média de colesterol e após este pr
 
 Essa outra medida faz a divisão da média de colesterol das faixas etárias pela média geral de colesterol. Os valores gerados são úteis para se perceber a variação dos itens em relação à tendência central.
 
-# Hipótese utilizada
+## Hipótese 1
 
 Pessoas com colesterol alto possuem mais chance de sofrerem de ataque cardíaco?
 
@@ -76,6 +76,7 @@ Isso também pode ser mostrado no dataset escolhido pelos componentes, pois 92,5
 
 Com isso, conclui-se que o nível de colesterol é um fator importante para causar ataques cardíacos. 
 
+## Hipótese 2
 
 Teste de Hipóteses
 
