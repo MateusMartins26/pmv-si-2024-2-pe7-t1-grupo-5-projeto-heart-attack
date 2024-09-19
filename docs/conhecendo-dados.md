@@ -131,5 +131,5 @@ Elaboramos uma matriz de confusão para compreender melhor a correlação entre 
 Existem muitas ferramentas diferentes que podem ser utilizadas para fazer a análise dos dados. Nesta seção, descreva as ferramentas/tecnologias utilizadas e sua aplicação. Vale destacar que, preferencialmente, as análises deverão ser realizadas utilizando a linguagem de programação Python.
 
 
-Para algumas das análises, foi utilizado a solução Microsoft Power BI, ferramenta muito conhecida para se realizar análise de dados.
+Para algumas das análises, foi utilizado a solução Microsoft Power BI, ferramenta muito conhecida para se realizar análise de dados, e também aplicação da linguagem Python no ambiente Google Colab.
 
