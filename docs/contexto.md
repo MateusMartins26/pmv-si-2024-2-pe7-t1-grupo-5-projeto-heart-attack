@@ -28,7 +28,7 @@ Haverá análise dos fatores de risco presentes em um dataset público, identifi
 Definido os fatores e suas respectivas grandezas, será elaborado um modelo preditivo, de modo a contribuir para a tomada de decisões em relação ao tratamento mais adequado por parte dos profissionais de saúde e promoção da saúde cardiovascular dos pacientes.
  
 
-## Justificativa -Lucas 
+## Justificativa 
 
 As doenças cardíacas continuam sendo uma das principais causas de morte no Brasil e no mundo. De acordo com dados globais recentes, as doenças cardiovasculares (DCV) representaram aproximadamente 19,8 milhões de mortes em 2022, um aumento significativo em relação aos 12,4 milhões registrados em 1990. Esse aumento é atribuído ao crescimento populacional, ao envelhecimento da população e à prevalência de fatores de risco como hipertensão, colesterol elevado, dieta inadequada e poluição do ar ​(Our World in Data, IHME).
 
@@ -48,7 +48,7 @@ Além disso, modelos de machine learning podem ser usados para identificar pacie
 
 Em resumo, o uso de machine learning em estudos acadêmicos focados na prevenção e tratamento de doenças cardíacas não só permite uma abordagem mais personalizada, mas também pode ajudar a reduzir a mortalidade e melhorar a qualidade de vida dos pacientes, ao garantir que cada indivíduo receba o tratamento mais adequado às suas necessidades específicas. Isso é particularmente vital em um cenário global onde a carga de doenças cardiovasculares continua a crescer, exigindo estratégias inovadoras e baseadas em dados para enfrentar esse desafio​ (IHME).
 
-## Público-Alvo - Mateus 
+## Público-Alvo 
 
 O público-alvo são médicos que desejam possuir uma ferramenta de apoio para tomadas de decisões relacionadas à melhor forma de tratamento para pacientes que possuem algum problema cardíaco já diagnosticado.
 
@@ -232,7 +232,7 @@ Os modelos desenvolvidos possuem o potencial de auxiliar profissionais de saúde
 
 Fonte:https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332
 
-# Descrição do _dataset_ selecionado - Marcus
+# Descrição do _dataset_ selecionado 
 
 O dataset escolhido para o tema contém atributos pertinentes para criação do modelo listando - dentro de um cenário em que todos os avaliados possuem problemas cardiovasculares - informações gerais sobre cada paciente analisado. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
 
