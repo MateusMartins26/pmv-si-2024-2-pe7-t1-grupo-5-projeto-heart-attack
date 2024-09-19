@@ -120,6 +120,11 @@ Como o valor calculado de t (20.7) é muito maior do que o valor crítico (1.645
 
 A partir da análise descrita e exploratória realizada, descreva todos os achados considerados relevantes para o contexto em que o trabalho se insere. Por exemplo: com relação à centralidade dos dados algo chamou a atenção? Foi possível identificar correlação entre os atributos? Que tipo de correlação (forte, fraca, moderada)? 
 
+![image](https://github.com/user-attachments/assets/96836fd3-a8a2-4e6d-8efe-e7e3ed21e12d)
+
+Elaboramos uma matriz de confusão para compreender melhor a correlação entre as variáveis do Dataset
+
+
 ## Ferramentas utilizadas
 
 Existem muitas ferramentas diferentes que podem ser utilizadas para fazer a análise dos dados. Nesta seção, descreva as ferramentas/tecnologias utilizadas e sua aplicação. Vale destacar que, preferencialmente, as análises deverão ser realizadas utilizando a linguagem de programação Python.
