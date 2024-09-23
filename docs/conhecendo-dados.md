@@ -147,6 +147,12 @@ A partir da análise descrita e exploratória realizada, descreva todos os achad
 
 Elaboramos uma matriz de confusão para compreender melhor a correlação entre as variáveis do Dataset, podemos pegar uma variável x e comparar com outra variável, usando heat map mapa de calor, sendo vermelho para correlações de Pearson fortes e positivas, vermelho menos intenso para moderadas e positivas e vermelho claro para fraca e positiva. Azul para correlações negativa, azul forte forte e negativa, azul menos intenso para moderada e negativa e azul claro para fraca e negativa ou mais próximo do branco sem correlação.
 
+![image](https://github.com/user-attachments/assets/9001447d-acb5-4ba3-ad46-e249157d860d)
+
+Utilizando a IQR (amplitude inter quartil) que é a diferença entre o Q3 (terceiro quartil) e Q1 (primeiro quartil) vemos que que não foram encontrados nenhum outlier no dataset que está sendo trabalhado.
+
+
+
 
 
 ## Ferramentas utilizadas
