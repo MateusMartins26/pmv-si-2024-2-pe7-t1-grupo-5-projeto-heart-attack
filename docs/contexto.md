@@ -279,3 +279,8 @@ ALSHRAIDEH, Mohammad. Enhancing Heart Attack Prediction with Machine Learning: A
 
 
 Colesterol alto: perigo silencioso que ataca o coração. **Blog - Evangelico**, 2023. Disponível em: <https://blog.evangelicohospital.com.br/todos/colesterol-alto-perigo-silencioso-que-ataca-o-coracao/#:~:text=Fernando%20Oliva%2C%20esclarece%20que%20o,e%20s%C3%ADntese%20da%20vitamina%20D.>. Acesso em: 19 de set. de 2024.
+
+Colesterol alto: entenda como tratar. **Dr. Eduardo Enrique**, Ano não informado. Disponível em: <https://www.dreduardoendocrino.com.br/colesterol>. Acesso em: 23 de set. de 2024.
+
+
+Tratamento para hipertensão: por que consultar um cardiologista é importante? **WeCor**, 2020. Disponível em: <https://www.wecor.com.br/tratamento-para-hipertensao#:~:text=A%20losartana%20%C3%A9%20um%20medicamento,com%20hipertens%C3%A3o%20ou%20insufici%C3%AAncia%20card%C3%ADaca.>. Acesso em: 23 de set. de 2024.
