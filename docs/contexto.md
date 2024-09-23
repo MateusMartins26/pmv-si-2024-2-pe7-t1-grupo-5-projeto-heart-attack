@@ -237,14 +237,14 @@ Fonte:https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332
 O dataset escolhido para o tema contém atributos pertinentes para criação do modelo listando - dentro de um cenário em que todos os avaliados possuem problemas cardiovasculares - informações gerais sobre cada paciente analisado. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
 
 
-* Gênero: atributo do tipo textual que define se o paciente é um homem ou uma mulher;
-* Idade: atributo numérico que determina a idade de cada um dos pacientes apresentados na base de dados;
-* Pressão Arterial: de acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes possuem ou não hipertensão, um fator importante para ataques cardíacos;
-* Colesterol: segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
-* Se possui ou não diabete: dado booleano que indica basicamente se a pessoa possui ou não diabete.
-* Situação sobre fumar: Dado qualitativo que indica se a pessoa fuma por três categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
-* Tipo de dor no peito: Atributo do tipo textual que indica alguns tipos de dor no peito que os pacientes sentiram.
-* Tratamento utilizado: Atributo do tipo textual que mostra os tratamentos recebidos pelos pacientes..
+* Gênero: variável qualitativa do tipo textual que define se o paciente é um homem ou uma mulher;
+* Idade: variável quantitativa do tipo numérico que determina a idade de cada um dos pacientes apresentados na base de dados;
+* Pressão Arterial:  variável quantitativa do tipo numérico. De acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes possuem ou não hipertensão, um fator importante para ataques cardíacos;
+* Colesterol: variável quantitativa do tipo numérico. Segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
+* Se possui ou não diabete: dado booleano que é considerado qualitativo. Ele indica basicamente se a pessoa possui ou não diabete.
+* Situação sobre fumar: dado qualitativo que indica se a pessoa fuma por três categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
+* Tipo de dor no peito: dado qualitativo que indica alguns tipos de dor no peito que os pacientes sentiram.
+* Tratamento utilizado: dado qualitativo o qual mostra os tratamentos recebidos pelos pacientes do dataset.
 
 
 Ao analisar cada um dos atributos desta base de dados, foi possível concluir que não será necessário realizar uma limpeza nos dados, pois não foi encontrado valores inesperados dentro do dataset.
