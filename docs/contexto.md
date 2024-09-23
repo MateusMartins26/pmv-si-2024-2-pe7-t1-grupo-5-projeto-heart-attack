@@ -276,3 +276,6 @@ FREESZ, Larissa e PINHEIRO, Paula. ENTENDO A PRESSÃO ARTERIAL. **UFMG**, Minas 
 OYAMA, Patrícia. Pressão alta: o maior perigo é a falta de informação. **Abbott**, 2018. Disponível em: <https://www.abbottbrasil.com.br/corpnewsroom/nutrition-health-and-wellness/pressao-alta--o-maior-inimigo-e-a-falta-de-informacao.html#:~:text=Quando%20o%20sangue%20circula%20com,angina%20(dores%20no%20peito)>. Acesso em: 28 de ago. de 2024.
 
 ALSHRAIDEH, Mohammad. Enhancing Heart Attack Prediction with Machine Learning: A Study at Jordan University Hospital, **Wiley Online Library**, 2024. Disponível em:<https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332>. Acesso em: 1  de set. de 2024.
+
+
+Colesterol alto: perigo silencioso que ataca o coração. **Blog - Evangelico**, 2023. Disponível em: <https://blog.evangelicohospital.com.br/todos/colesterol-alto-perigo-silencioso-que-ataca-o-coracao/#:~:text=Fernando%20Oliva%2C%20esclarece%20que%20o,e%20s%C3%ADntese%20da%20vitamina%20D.>. Acesso em: 19 de set. de 2024.
