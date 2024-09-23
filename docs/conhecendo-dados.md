@@ -70,7 +70,7 @@ Essa outra medida faz a divisão da média de colesterol das faixas etárias pel
 
 ## Hipótese 1
 
-Pessoas com colesterol alto possuem mais chance de sofrerem de ataque cardíaco?
+**Pessoas com colesterol alto possuem mais chance de sofrerem de ataque cardíaco?**
 
 Segundo o Dr. Fernando Oliva afirmou que: “O excesso de colesterol é diretamente responsável por formar depósitos de gordura nas artérias, também conhecidos como placa de ateroma, podendo provocar com o tempo obstruções e até mesmo oclusões destes vasos. Consequentemente, os órgãos deixam de receber aporte sanguíneo, deixando de funcionar. No coração, isso é conhecido como infarto”. 
 
@@ -86,7 +86,7 @@ Teste de Hipóteses
 
 Passo 1 : Formulando a Hipótese. 
 
-Teste de hipótese estatístico: A média da pressão arterial é superior a 130 ?  
+Teste de hipótese estatístico: **A média da pressão arterial é superior a 130?**  
 
 Hipótese Nula (H₀): A média da pressão arterial é menor ou igual a 130. 
 𝐻0: 𝜇 ≤ 130
@@ -115,6 +115,29 @@ Para um nível de significância  𝛼 de 0.05 , o valor crítico t para uma dis
 Passo 4 : Concluindo o teste:
 
 Como o valor calculado de t (20.7) é muito maior do que o valor crítico (1.645), é rejeitado a hipótese nula, pois há evidências suficientes para concluir-se que a média da pressão arterial é significativamente superior a 130.
+
+## Hipótese 3
+
+**Somente um atributo pode influenciar completamente para definir o tratamento de um paciente?**
+
+
+Para se explicar o assunto, serão utilizados 2 situações.
+
+* Tratamento Para Hipertensão - WeCor(2020): 
+
+Conforme citado no site, há várias formas de se tratar a pressão arterial, como realizar exercícios físicos, parar de fumar, mudança de vida e uso de medicamentos junto do acompanhamento médico.
+
+
+* Tratamento Para Colesterol - Dr. Eduardo Enrique(Ano não informado)
+
+Segundo o especialista, para se escolher o melhor tratamento, ão levados em consideração os hábitos de vida, histórico pessoal e familiar de infarto, AVC e morte por doenças cardiovasculares, além do histórico de alterações metabólicas e cardiovasculares, como diabetes e hipertensão.
+
+Desta forma conclui-se que vários atributos estão atrelados para a melhor escolha do tratamento.
+
+Além disso, esses conhecimentos são refletidos na base de dados, é possível constatar essa informação através da matriz de confusão posicionada na seção “Descrição dos achados”.
+
+
+
 
 ## Descrição dos achados
 
