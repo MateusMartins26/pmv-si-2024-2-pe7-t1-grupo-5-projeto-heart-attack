@@ -254,7 +254,7 @@ Link para o dataset: https://www.kaggle.com/datasets/waqi786/heart-attack-datase
 
 # Canvas analítico
 
-![image](/src/images/Canvas%20Analítico.png)
+![image](/src/images/Canvas%20Revisado.png)
 
 # Referências
 
