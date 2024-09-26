@@ -151,6 +151,9 @@ Elaboramos uma matriz de confusão para compreender melhor a correlação entre 
 
 Utilizando a IQR (amplitude inter quartil) que é a diferença entre o Q3 (terceiro quartil) e Q1 (primeiro quartil) vemos que que não foram encontrados nenhum outlier no dataset que está sendo trabalhado.
 
+![image](https://github.com/user-attachments/assets/0c2f8274-0aa7-4ba4-9499-d344fea6bdfb)
+![image](https://github.com/user-attachments/assets/805afdad-1b89-412e-bde0-30b12443a318)
+
 
 
 
