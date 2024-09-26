@@ -12,13 +12,12 @@ O público-alvo principal desta iniciativa são os médicos e profissionais de s
 
 ## Problema
 
-Através da análise dos dados e identificação dos principais fatores de risco para o desenvolvimento de doenças coronarianas, como o aprendizado de máquina pode auxiliar na melhora da performance médica para prognóstico e posterior diagnóstico em pacientes desse problema de saúde?
+Mesmo com o avanço das tecnologias de aprendizado de máquina e das técnincas de análise de dados, ainda existem poucas ferramentas que auxiliam especialistas em doenças coronarianas na tomadas de decisão relacionadas ao tratamento mais adequado e individualizado para pacientes baseado em seus dados específicos de estilo de vida.
 
 
 ## Questão de pesquisa
 
-Qual a possibilidade de se criar um modelo confiável e com bom grau de precisão para, a partir de um conjunto de atributos e fatores relacionados a doenças cardíacas, recomendar o tratamento adequado?
-
+Com qual confiabilidade é possível, a partir de um conjunto de atributos e fatores relacionados a doenças cardíacas construir um modelo que recomende o tratamento mais adequado?"
 
 ## Objetivos preliminares
 
@@ -124,14 +123,10 @@ Os resultados mostraram que o Random Forest apresentou o melhor desempenho geral
 ### Prevendo Doenças Cardiovasculares com Machine Learning (Medium, 2024)
 Um estudo sobre predição de doenças cardíacas.
 
-#### 1. Objetivo 
-
-O objetivo dos componentes do projeto é elaborar uma ferramenta auxiliar que usa aprendizado de máquina. Com isso, essa solução indicará aos profissionais da saúde o melhor tratamento para os seus pacientes com base em seus parâmetros.
-
-#### 2. Introdução ao Problema 
+#### 1. Introdução ao Problema 
 As doenças cardíacas, uma das principais preocupações globais de saúde, têm sido alvo de estudos aprofundados, e o campo do aprendizado de máquina tem se destacado como uma ferramenta promissora para lidar com essa questão crucial.
 
-#### 3. Características do Dataset Utilizado 
+#### 2. Características do Dataset Utilizado 
 Nomes | traduções:
 
 - age | idade em anos
@@ -159,8 +154,22 @@ Nomes | traduções:
 - thal: 1 = normal; 2 = fixed defect; 3 = reversable defect) | Talassemia: 1 = normal; 2 = problema corrigido; 3 = problema reversível
 - target: 0 = não possui doença cardíaca, 1 = possui doença cardíaca
 
-#### 4. Conclusão 
-Nesse código gigantesco estudamos algumas variáveis e plots para criarmos modelos de Machine Learning que pudessem prever se, com novas entradas, uma predição assertiva poessa ser feita. Obtivemos bons resultados nas máquinas preditivas mas todo ajuste é bem vindo e o objetivo é aumentar cada mais mais sua capacidade de prever corretamente.
+#### 3. Abordagens e Algoritmos Utilizados
+
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
+- Random Forest
+
+#### 4. Métricas de Avaliação
+As métricas usadas para avaliar o desempenho dos modelos incluem:
+
+- Acurácia - para medir a proporção de previsões corretas.
+- Precisão - para avaliar a exatidão das previsões positivas.
+- Recall (Sensibilidade) - para medir a taxa de detecção de casos positivos.
+- F1-score - combinação de precisão e recall para um resultado balanceado.
+
+#### 5. Resultados Obtidos 
+Os resultados mostraram que o algoritmo Random Forest apresentou o melhor desempenho em comparação com os outros modelos testados, como KNN e SVM. O modelo de Random Forest obteve a maior acurácia na previsão de doenças cardíacas, destacando-se por sua capacidade de generalização. Além disso, as métricas de precisão, recall e F1-score também indicaram um bom equilíbrio entre as previsões positivas e negativas, reforçando a eficiência do modelo.
 
 ### Detecção de doenças cardíacas usando algoritmos de aprendizado de máquina e um sistema de monitoramento de saúde cardiovascular em tempo real (World Journal of Engineering and Technology, 2018) ###
 
