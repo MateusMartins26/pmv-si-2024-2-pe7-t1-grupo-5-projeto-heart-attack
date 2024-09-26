@@ -154,7 +154,10 @@ Utilizando a IQR (amplitude inter quartil) que é a diferença entre o Q3 (terce
 ![image](https://github.com/user-attachments/assets/0c2f8274-0aa7-4ba4-9499-d344fea6bdfb)
 ![image](https://github.com/user-attachments/assets/805afdad-1b89-412e-bde0-30b12443a318)
 
-
+Usando o pairplot da biblioteca seaborn do python conseguimos identificar algumas características interessantes do dataset:
+1) Sobre age (idade): notamos que as idades com mais incidência de problemas caridovasculares possui maior ocorreências para as faixas etárias: 40 anos (possivelmente ocorre por conta de sedentarismo e alta carga de estresse) e entre 80 e 90 anos (possivelmente em decorrência da idade e consequência de alguns hábitos não saudáveis ao longo da vida);
+2) Sobre chest pain type (tipo de dor no peito): notamos que Non-anginal Pain (Dor não anginosa) e Asymptomatic (Assintomático) são as mais frequentes, o que indica que uma dor no peito demanda um exame mais amplo além de causas cardiovasculares (como: pulmões, músculos, esôfago entre outros) e a importância de um acompanhamento mais constante da condição cardíaca, pois há casos que não há sintomas evidentes de possíveis probelmas.
+3) Sobre Treatment (tratamento): os tratamentos mais indicados são Lifestyle Changes (Mudanças no estilo de vida) e Coronary Artery Bypass Graft (Enxerto de Revascularização da Artéria Coronária) que consiste em construir um novo caminho para o fluxo de sangue. Vendo isso temos que a adequação da dieta para que seja mais balanceada e adoção dos exercícios físicos na rotina podem ser suficiente para correção ou prevenção de problemas cardiovasculares, e nos caso do Bypass, mostra que muitos casos são extremos e indicam entupimento de veias, tendo como possíveis causas tabagismo, dieta desbalanceada e sedentarismo.
 
 
 
