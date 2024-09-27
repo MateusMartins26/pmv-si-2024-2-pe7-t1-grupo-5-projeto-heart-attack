@@ -22,7 +22,7 @@ Describe do dataset, contendo: contagem, média, desvio padrão, valor mínimo, 
 ![image](https://github.com/user-attachments/assets/55ac0f59-cd77-41e2-b363-03c727514ca0)
 
 
-Convertendo variável Gender do tipo objeto para float para calcular média de idade por gênero:
+Convertendo a variável Gender do tipo objeto para float para calcular média de idade por gênero:
 
 ![image](https://github.com/user-attachments/assets/d4a3fc36-22d0-4427-b14b-e40b1a4e0f0c)
 
