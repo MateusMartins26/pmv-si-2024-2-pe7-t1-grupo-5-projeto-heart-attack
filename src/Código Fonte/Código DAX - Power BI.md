@@ -1,3 +1,12 @@
 # Código DAX (Data Analysis Expressions)
 
-Adicione a esta seção, um resumo de todo o projeto desenvolvido, e inclua, o vídeo de apresentação final entregue.
+Segue o código utilizado para se chegar nas medidas indicadas na seção da Etapa 2:
+
+![image](/src/images/Colesterol%20Geral.png)
+
+Com essa medida, é realizado o cálculo da média de colesterol e após este procedimento, por meio da função All, os demais filtros serão ignorados dentro do ambiente de desenvolvimento. 
+
+
+![image](/src/images/Razão%20e%20Proporção.png)
+
+Essa outra medida faz a divisão da média de colesterol das faixas etárias
