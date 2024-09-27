@@ -7,17 +7,17 @@ Visualizando o dataset como data frame df:
 ![image](https://github.com/user-attachments/assets/5438f26c-21ac-4013-9e5c-ac5bd0c2cfc7)
 
 
-Info do dataset contendo colunas e tipos de dados:
+Info do dataset contendo colunas, tipos de dados e a contagem de amostras:
 
 ![image](https://github.com/user-attachments/assets/bf859dc2-d5a7-47cd-9d1c-75dda2b16e70)
 
 
-Verificando se há dados nulos no conjunto de dados:
+Verificando se há dados nulos no conjunto de dados (linhas e colunas):
 
 ![image](https://github.com/user-attachments/assets/e2e8d5ae-8192-4035-a04e-9fbc79a0d528)
 
 
-Describe do dataset, contendo contagem, média, desvio padrão, valor mínimo, primeiro, segundo e terceiro quartis, e valor máximo de cada coluna:
+Describe do dataset, contendo: contagem, média, desvio padrão, valor mínimo, primeiro, segundo e terceiro quartis, e valor máximo de cada coluna:
 
 ![image](https://github.com/user-attachments/assets/55ac0f59-cd77-41e2-b363-03c727514ca0)
 
