@@ -57,17 +57,7 @@ Nesta tabela, os componentes trouxeram um breve detalhamento da média de colest
 
 ![image](/src/images/Colesterol.png)
 
-Segue o código utilizado para se chegar nestas medidas:
-
-![image](/src/images/Colesterol%20Geral.png)
-
-Com essa medida, é realizado o cálculo da média de colesterol e após este procedimento, por meio da função All, os demais filtros serão ignorados dentro do ambiente de desenvolvimento. 
-
-
-![image](/src/images/Razão%20e%20Proporção.png)
-
-Essa outra medida faz a divisão da média de colesterol das faixas etárias pela média geral de colesterol. Os valores gerados são úteis para se perceber a variação dos itens em relação à tendência central.
-
+Para mais detalhamentos, os códigos DAX utilizados se encontram na pasta src.
 ## Hipótese 1
 
 **Pessoas com colesterol alto possuem mais chance de sofrerem de ataque cardíaco?**

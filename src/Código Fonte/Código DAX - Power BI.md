@@ -9,4 +9,4 @@ Com essa medida, é realizado o cálculo da média de colesterol e após este pr
 
 ![image](/src/images/Razão%20e%20Proporção.png)
 
-Essa outra medida faz a divisão da média de colesterol das faixas etárias
+Essa outra medida faz a divisão da média de colesterol das faixas etárias pela média geral de colesterol. Os valores gerados são úteis para se perceber a variação dos itens em relação à tendência central.
