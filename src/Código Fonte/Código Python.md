@@ -2,10 +2,6 @@
 
 Adicione a esta seção, um resumo de todo o projeto desenvolvido, e inclua, o vídeo de apresentação final entregue.
 
-# Código Python
-
-Adicione a esta seção, um resumo de todo o projeto desenvolvido, e inclua, o vídeo de apresentação final entregue.
-
 Visualizando o dataset como data frame df:
 
 ![image](https://github.com/user-attachments/assets/5438f26c-21ac-4013-9e5c-ac5bd0c2cfc7)
