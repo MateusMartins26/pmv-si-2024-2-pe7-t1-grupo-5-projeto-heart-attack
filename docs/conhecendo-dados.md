@@ -165,8 +165,5 @@ Usando o pairplot da biblioteca seaborn do python conseguimos identificar alguma
 
 ## Ferramentas utilizadas
 
-Existem muitas ferramentas diferentes que podem ser utilizadas para fazer a análise dos dados. Nesta seção, descreva as ferramentas/tecnologias utilizadas e sua aplicação. Vale destacar que, preferencialmente, as análises deverão ser realizadas utilizando a linguagem de programação Python.
-
-
-Para algumas das análises, foi utilizado a solução Microsoft Power BI, ferramenta muito conhecida para se realizar análise de dados, e também aplicação da linguagem Python no ambiente Google Colab.
+A principal ferramenta de software utilizada foi a aplicação da linguagem Python no ambiente Google Colab em conjunto com o Power BI, empregada para coletar métricas que apoiarão nas análises dos pacientes do dataset . As métricas foram realizadas atráves da linguagem DAX(Data Analysis Expressions). Também foi utilizado o Power Query, ferramenta ETL para limpeza e preparação de dados do Power BI.
 
