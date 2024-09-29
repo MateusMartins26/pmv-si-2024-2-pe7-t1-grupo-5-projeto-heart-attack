@@ -72,6 +72,14 @@ Com isso, conclui-se que o nível de colesterol é um fator importante para caus
 
 ## Hipótese 2
 
+
+A tabela de pressão arterial é útil para controlar doenças crônicas, como a hipertensão, entre outras, ou para verificar anormalidades que contribuem para o diagnóstico e sinalizam que é hora de buscar ajuda médica. Segundo o Departamento de Hipertensão Arterial da Sociedade Brasileira de Cardiologia, a pressão arterial normal limítrofe refere-se a valores que estão próximos ao limite superior do que é considerado normal. Isso geralmente indica que a pressão arterial está elevada, mas ainda não é alta o suficiente para ser classificada como hipertensão. No entanto, o risco de avançar para o grau 1 de hipertensão leve é muito grande. 
+
+![image](https://github.com/user-attachments/assets/63d4b971-fb74-495a-837b-92724a40b8a7)
+Tabela II. Classificação diagnóstica da hipertensão arterial (adultos com mais de 18 anos de idade).
+
+Quando o sangue circula com a pressão elevada, ele vai machucando as paredes dos vasos sanguíneos, que se tornam endurecidos e mais estreitos. Com o passar do tempo, se o problema não for controlado, os vasos podem entupir e até se romper, o que pode causar infarto, insuficiência cardíaca e angina (dores no peito). 
+
 Teste de Hipóteses
 
 Passo 1 : Formulando a Hipótese. 
@@ -104,7 +112,9 @@ Para um nível de significância  𝛼 de 0.05 , o valor crítico t para uma dis
 
 Passo 4 : Concluindo o teste:
 
-Como o valor calculado de t (20.7) é muito maior do que o valor crítico (1.645), é rejeitado a hipótese nula, pois há evidências suficientes para concluir-se que a média da pressão arterial é significativamente superior a 130.
+Como o valor calculado de t (20.7) é muito maior do que o valor crítico (1.645), é rejeitado a hipótese nula, pois há evidências suficientes para concluir-se que a média da pressão arterial é significativamente superior a 130. Portanto a média da pressão arterial do grupo analisado, no mínimo, encontra-se em um grau de aproximação ao primeiro estágio de impertensão leve.
+
+Fonte: http://departamentos.cardiol.br/dha/consenso3/capitulo1.asp
 
 ## Hipótese 3
 
