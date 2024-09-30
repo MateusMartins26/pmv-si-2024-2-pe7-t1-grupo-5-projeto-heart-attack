@@ -174,15 +174,11 @@ Os resultados mostraram que o algoritmo Random Forest apresentou o melhor desemp
 ### Detecção de doenças cardíacas usando algoritmos de aprendizado de máquina e um sistema de monitoramento de saúde cardiovascular em tempo real (World Journal of Engineering and Technology, 2018) ###
 
 
-#### 1. Objetivo ##
-
-O trabalho teve como objetivo desenvolver um Sistema de Suporte à Decisão na detecção de doenças cardíacas que utiliza a técnica de mineração de dados com melhor precisão e desempenho entre Naïve Bayes, Máquina de Vetor de Suporte, Regressão Logística Simples, Floresta Aleatória e Rede Neural Artificial (RNA) etc.
-
-#### 2. Introdução ao Problema ##
+#### 1. Introdução ao Problema ##
 
 Donças cardíacas são as principais causas de morte em todo o mundo. De acordo com a pesquisa da Organização Mundial da Saúde (OMS), 17,5 milhões de mortes globais ocorrem devido a ataques cardíacos e derrames. Mais de 75% das mortes por doenças cardiovasculares ocorrem principalmente em países de renda média e baixa. Além disso, 80% das mortes que ocorrem por doenças cardiovasculares (DCVs) são devido a derrame e ataque cardíaco. Portanto, a detecção de anormalidades cardíacas no estágio inicial e ferramentas para a previsão de doenças cardíacas podem salvar muitas vidas e ajudar os médicos a elaborar um plano de tratamento eficaz que, em última análise, reduza a taxa de mortalidade devido a doenças cardiovasculares. 
 
-#### 3. Detalhes do Dataset: ####
+#### 2. Características do Dataset Utilizado
 O dataset contém um total de 303 registros de pacientes. Estes dados foram originalmente coletados de quatro diferentes fontes médicas, mas o conjunto de dados completo disponível na UCI é composto principalmente pelos dados do Cleveland Clinic Foundation.
 
 O Dataset obtido para a aplicação de mineração de dados inclui 13 tipos de entrada. Dois bancos de dados de doenças cardíacas disponíveis publicamente com o mesmo tipo e número de atributos são mesclados para formar um conjunto de dados maior e obter maior precisão.
@@ -192,30 +188,54 @@ O Dataset obtido para a aplicação de mineração de dados inclui 13 tipos de e
 
 Atributos que estão relacionados a diferentes parâmetros do sistema cardiovascular. Para o design do sistema de classificação e predição baseado em nuvem, um atributo-chave foi projetado (ou seja, o número de celular do paciente que atua como o identificador exclusivo do paciente). Atributos previsíveis recebem uma escala numérica para determinar os dois grupos classificados (ou seja, Saudável e Com doença cardíaca). A Tabela 1 mostra os atributos de entrada contendo um total de 13 características fisiológicas retiradas dos dois conjuntos de dados mencionados anteriormente usados ​​para qualquer tipo de predição de anormalidade cardíaca.
 
- ####  4. Conclusão  ####
+ ####  3. Abordagens e Algoritmos Utilizados
+As tecnologias utilizadas no estudo foram:
 
-Sobre comparação entre vários algoritmos de aprendizado de máquina, foi descoberto que nenhum algoritmo atingiu um nível de precisão de mais de 90 por cento na previsão de doenças cardíacas usando o mesmo número e tipos de recursos usados ​​neste estudo. Embora um modelo do aplicativo de detecção de doenças cardíacas baseado em nuvem seja representado aqui, os trabalhos futuros serão focados no desenvolvimento de um servidor dedicado e dados.
- 
-Fonte: https://www.scirp.org/journal/paperinformation?paperid=88650#ref15
+- Sistema de monitoramento contínuo baseado em um microcontrolador Arduino com sensores de temperatura, umidade e batimentos cardíacos para coleta de dados fisiológicos em tempo real.
+- Aplicativo inteligente para predição de doenças cardíacas baseado em nuvem, onde os dados são analisados e enviados para médicos através de uma interface móvel.
+
+Já para os algorítmos, temos os seguintes:
+
+- Naive Bayes: Classificador probabilístico que assume independência entre atributos.
+- Redes Neurais Artificiais (ANN): Capazes de modelar funções não lineares complexas.
+- Support Vector Machine (SVM): Usado para dados lineares e não lineares, com um hiperplano para separar classes.
+- Random Forest: Algoritmo de bagging que cria várias árvores de decisão e as combina para previsão.
+- Regressão Logística Simples: Utilizada para classificação binária, com uma função logística que retorna valores entre 0 e 1.
+
+ #### 4. Métricas de Avaliação
+As métricas de avaliação utilizadas no artigo incluem:
+
+- Taxa de Acerto (Accuracy): Porcentagem de previsões corretas.
+- Precisão (Precision): Proporção de verdadeiros positivos em relação ao total de positivos previstos.
+- Revocação (Recall): Proporção de verdadeiros positivos em relação ao total de positivos reais.
+- F1 Score: Média harmônica entre precisão e revocação, equilibrando ambos.
+- AUC-ROC: Área sob a curva da característica de operação do receptor, medindo a capacidade de discriminação do modelo.
+
+Essas métricas foram empregadas para comparar o desempenho dos algoritmos de aprendizado de máquina e selecionar o modelo mais eficiente na predição de doenças cardíacas.
+
+#### 5. Resultados Obtidos
+
+Os resultados obtidos mostraram que cinco algoritmos de aprendizado de máquina apresentaram precisão superior a 80% na previsão de doenças cardíacas. As métricas de desempenho foram as seguintes:
+
+- Naive Bayes: Acurácia de 86,40%
+- SVM: Acurácia de 97,53%
+- Floresta Aleatória: Acurácia de 95,76%
+- Regressão Logística Simples: Acurácia de 95,05%
+- Redes Neurais Artificiais: Acurácia de 77,39%
+
+Esses resultados indicam a eficácia dos algoritmos selecionados na detecção de doenças cardíacas.
 
 
 ### Melhorando a previsão de ataques cardíacos com aprendizado de máquina: um estudo no Jordan University Hospital(ALSHRAIDEH, Mohammad, 2024) ###
 
 
-#### 1. Objetivo ##
-
-O objetivo do estudo apresentado é acrescer a precisão de previsão utilizando uma abordagem abrangente, incluindo pré-processamento de dados, seleção de recursos e desenvolvimento de modelos.
-
-
-#### 2. Introdução ao Problema ## 
+#### 1. Introdução ao Problema 
 
 Doença cardíaca é uma das principais causas globais de mortalidade, e seu diagnóstico oportuno apresenta desafios significativos devido à sobreposição de sintomas com outras condições de saúde. Essa complexidade pode complicar o tratamento significativamente quando a detecção é tardia.
 
-#### 3. Detalhes do Dataset: ####
+#### 2. Características do Dataset Utilizado
 
 Esta pesquisa usou um conjunto de dados de doenças cardíacas do JUH em Amã, Jordânia, para testes e treinamento do sistema. O conjunto de dados compreendeu um total de 486 casos. Destes, 324 instâncias estão associadas a pacientes diagnosticados com doenças cardíacas. Os 162 casos restantes pertencem a pacientes sem doenças cardíacas que já visitaram clínicas de cardiologia. Incluiu 58 variáveis ​​essenciais para o diagnóstico de doenças cardíacas, categorizadas da seguinte forma:
-
-
 
 
 * (1) Informações básicas do paciente (por exemplo, idade e sexo);
@@ -235,9 +255,32 @@ O conjunto de dados compreendia predominantemente atributos binários, denotando
 
 - ![image](/src/images/Patient%20Datasheet.PNG)
 
-#### Conclusão ##
+#### 3. Abordagens e Algorítmos Utilizados
 
-Os modelos desenvolvidos possuem o potencial de auxiliar profissionais de saúde na tomada de decisões, otimizando a alocação de recursos e facilitando a entrega eficiente de serviços de saúde. No entanto, é crucial reconhecer as limitações identificadas do estudo, abrangendo preocupações relacionadas à representatividade dos dados, dimensionalidade dos dados e interpretabilidade do modelo. Consequentemente, há uma necessidade imperativa de mais pesquisas para abordar essas limitações e aumentar a robustez e aplicabilidade dos modelos desenvolvidos em cenários de saúde do mundo real.
+O artigo discute diversas abordagens de aprendizado supervisionado e não supervisionado, com foco em algoritmos de aprendizado de máquina, como:
+
+- Máquinas de Vetores de Suporte (SVM): Utilizadas para classificação, maximizando a margem entre classes.
+- Florestas Aleatórias (RF): Combinam múltiplas árvores de decisão, eficazes em dados de alta dimensionalidade.
+- Árvores de Decisão (DTs): Estrutura de árvore para decisões, fácil de interpretar.
+- Naive Bayes: Classificação baseada na independência condicional entre características.
+- K-Vizinhos Mais Próximos (KNN): Classificação por maioria entre os vizinhos mais próximos.
+
+Esses algoritmos são aplicados na detecção de doenças cardíacas.
+
+#### 4. Métricas de Avaliação
+
+As métricas de avaliação calculadas a partir da matriz de confusão incluem:
+
+- Acurácia: Proporção de previsões corretas (TP + TN) em relação ao total de casos (TP + TN + FP + FN).
+- Precisão: Porcentagem de previsões positivas corretas, refletindo a confiabilidade do modelo.
+- ROC (Receiver Operating Characteristic): Gráfico que relaciona a taxa de verdadeiros positivos (TPR) e a taxa de falsos positivos (FPR).
+- F1-score: Média harmônica entre precisão e recall, útil para equilibrar ambos os aspectos.
+
+Essas métricas fornecem uma visão abrangente do desempenho do modelo de classificação.
+
+#### 5. Resultados Obtidos
+
+O estudo alcançou uma precisão notável de 94,3% na previsão de doenças cardíacas, utilizando o classificador SVM em conjunto com a otimização por enxame de partículas para a seleção de características. Esses resultados destacam a eficácia dos algoritmos de aprendizado de máquina na categorização de pacientes de acordo com o risco de doenças cardíacas, além de ressaltar a necessidade de mais pesquisas para abordar limitações relacionadas à representatividade dos dados e à interpretabilidade dos modelos.
 
 Fonte:https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332
 
@@ -246,14 +289,14 @@ Fonte:https://onlinelibrary.wiley.com/doi/full/10.1155/2024/5080332
 O dataset escolhido para o tema contém atributos pertinentes para criação do modelo listando - dentro de um cenário em que todos os avaliados possuem problemas cardiovasculares - informações gerais sobre cada paciente analisado. Com isso, a seção do projeto foi elaborada com o fundamento de discorrer e explicar cada um dos atributos do conjunto de dados.
 
 
-* Gênero: variável qualitativa do tipo textual que define se o paciente é um homem ou uma mulher;
-* Idade: variável quantitativa do tipo numérico que determina a idade de cada um dos pacientes apresentados na base de dados;
-* Pressão Arterial:  variável quantitativa do tipo numérico. De acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes possuem ou não hipertensão, um fator importante para ataques cardíacos;
-* Colesterol: variável quantitativa do tipo numérico. Segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto.
-* Se possui ou não diabete: dado booleano que é considerado qualitativo. Ele indica basicamente se a pessoa possui ou não diabete.
-* Situação sobre fumar: dado qualitativo que indica se a pessoa fuma por três categorias(Nunca Fumou, fuma atualmente ou se já fumou no passado);
-* Tipo de dor no peito: dado qualitativo que indica alguns tipos de dor no peito que os pacientes sentiram.
-* Tratamento utilizado: dado qualitativo o qual mostra os tratamentos recebidos pelos pacientes do dataset.
+* Gênero: variável qualitativa do tipo textual que define se o paciente é um homem ou uma mulher. 1 = masculino, 2 = feminino ;
+* Idade: variável quantitativa do tipo numérico que determina a idade de cada um dos pacientes apresentados na base de dados. Range de 30 a 89;
+* Pressão Arterial:  variável quantitativa do tipo numérico. De acordo com a UFMG, pressão arterial é a força que o sangue executa contra as paredes da artéria. A partir disso, será possível verificar se os pacientes possuem ou não hipertensão, um fator importante para ataques cardíacos. Range de 90 a 199;
+* Colesterol: variável quantitativa do tipo numérico. Segundo o Hospital Israelita Robert Einstein, colesterol é uma gordura que está no organismo do ser humano, o qual produz hormônios masculinos, femininos e também a vitamina D. Este também é um dos principais fatores para ocorrência de um infarto. Range de 150 a 299; 
+* Se possui ou não diabete: dado booleano que é considerado qualitativo. Ele indica basicamente se a pessoa possui ou não diabete. Sim = possui diabetes, não = não possui diabetes.
+* Situação sobre fumar: dado qualitativo que indica se a pessoa fuma por três categorias. Nunca fumou, fuma atualmente, outros;
+* Tipo de dor no peito: dado qualitativo que indica alguns tipos de dor no peito que os pacientes sentiram. Dor não anginosa, assintomáticos, outros.
+* Tratamento utilizado: dado qualitativo o qual mostra os tratamentos recebidos pelos pacientes do dataset. Mudanças no estilo de vida, Cirurgia de Revascularização do Miocárdio (Ponte de Safena), outros.
 
 
 Ao analisar cada um dos atributos desta base de dados, foi possível concluir que não será necessário realizar uma limpeza nos dados, pois não foi encontrado valores inesperados dentro do dataset.
