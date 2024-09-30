@@ -2,7 +2,7 @@
 
 
 
-### Utilizando o Google Colab, conseguimos obter as informações abaixo:
+### Utilizando o Google Colab, foram as obtidas as seguintes informações:
 
 
 ![image](https://github.com/user-attachments/assets/057f62bb-73ee-45ba-a983-3000ab840a01)
@@ -16,7 +16,7 @@ O Dataset é composto por 8 colunas:
 - Smoking Status (se paciente é, já foi ou não é fumante);
 - Chest Pain Type (tipo de dor no peito que o paciente sente);
 - Treatment (tipo de tratamento indicado).
-Temos também 1.000 rows (linhas) referente à dados de 1.000 pessoas participantes do estudo/pesquisa.
+Existem também 1.000 rows (linhas) referente a dados de 1.000 pessoas participantes do estudo/pesquisa.
 
 
 ![image](https://github.com/user-attachments/assets/9e21d732-08c7-4cca-8eb7-d6f990d45edf)
@@ -31,7 +31,7 @@ Importante destacar que não há dados nulos (linhas e colunas sem conteúdo) ne
 
 ![image](https://github.com/user-attachments/assets/1dbfb213-7420-4129-8a40-f0f6f53371f5)
 
-Realizando o describe do Dataset, temos para as variáveis quantitativas com dados do tipo inteiro/int64 que são numéricas das colunas Age, Blood Pressure e Choleterol, e obtemos os parâmetros abaixo para cada uma das colunas:
+Foi realizado o describe do Dataset, verificando que possuem variáveis quantitativas com dados do tipo inteiro/int64 as colunas: Age, Blood Pressure e Choleterol. Abaixo, estão os parâmetros para cada uma das colunas:
 - Count (contagem);
 - Mean (média);
 - Std (desvio padrão);
@@ -39,25 +39,26 @@ Realizando o describe do Dataset, temos para as variáveis quantitativas com dad
 - Quartis (25%. 50%, 75%);
 - Max (máximo).
   
-Para as colunas que possuem variáveis qualitativas faremos uma análise e definiremos a melhor transformação dos dados para se tornarem booleanas ou numéricas.
+Para as colunas que possuem variáveis qualitativas será realizada uma análise posterior e definição da melhor transformação dos dados para se tornarem booleanas ou numéricas.
 
-Importante: aqui começamos a ver algumas características, median 50% e mean média estão próximas, indicativo de formato parecido com distribuição normal, está bem distribuída, com comportamento regular.
+Importante: já é possível notar algumas características, como median 50% e mean média estão próximas, indicativo de formato parecido com distribuição normal. Observa-se que está bem distribuída, com comportamento regular.
 
 ![image](https://github.com/user-attachments/assets/fdf340c6-dad0-4156-a379-2d32c551ef40)
 
-Verificamos que o estudo foi realizado com 1.000 pessoas, sendo: 510 Mulheres e 490 Homens, e que a média de idade para ambos os gêneros é de 60 anos.
+Verificou-se que o estudo foi realizado com 1.000 pessoas, sendo: 510 Mulheres e 490 Homens, e que a média de idade para ambos os gêneros é de 60 anos.
 
 ## Análises Realizadas
 
 
-O grupo utilizou a ferramenta software Power BI para coletar métricas que auxiliarão nas análises dos pacientes do dataset selecionado. Para elaborar as métricas, foi necessário a utilização da linguagem DAX(Data Analysis Expressions) para criar algumas funções como a média de colesterol dos pacientes envolvidos.
+Foi utilizada a ferramenta Power BI para coletar métricas que auxiliarão nas análises dos pacientes do dataset selecionado. Para elaborar as métricas, foi necessário a utilização da linguagem DAX (Data Analysis Expressions) para criar algumas funções como a média de colesterol dos pacientes envolvidos.
 
-Nesta tabela, os componentes trouxeram um breve detalhamento da média de colesterol dos pacientes. Para realizar o agrupamento dos participantes, foi necessário criar uma coluna condicional através do Power Query, ferramenta ETL para limpeza e preparação de dados do Power BI. Com isso, os pacientes foram separados por sua faixa etária.
+Nesta tabela, tem-se um breve detalhamento da média de colesterol dos pacientes. Para realizar o agrupamento dos participantes, criou-se uma coluna condicional através do Power Query, ferramenta ETL para limpeza e preparação de dados do Power BI. Com isso, os pacientes foram separados por sua faixa etária.
 
 
 ![image](/src/images/Colesterol.png)
 
 Para mais detalhamentos, os códigos DAX utilizados se encontram na pasta src.
+
 ## Hipótese 1
 
 **Pessoas com colesterol alto possuem mais chance de sofrerem de ataque cardíaco?**
@@ -142,28 +143,26 @@ Além disso, esses conhecimentos são refletidos na base de dados, é possível 
 
 ## Descrição dos achados
 
-A partir da análise descrita e exploratória realizada, descreva todos os achados considerados relevantes para o contexto em que o trabalho se insere. Por exemplo: com relação à centralidade dos dados algo chamou a atenção? Foi possível identificar correlação entre os atributos? Que tipo de correlação (forte, fraca, moderada)? 
-
 ![image](https://github.com/user-attachments/assets/96836fd3-a8a2-4e6d-8efe-e7e3ed21e12d)
 
-Elaboramos uma matriz de confusão para compreender melhor a correlação entre as variáveis do Dataset, podemos pegar uma variável x e comparar com outra variável, usando heat map mapa de calor, sendo vermelho para correlações de Pearson fortes e positivas, vermelho menos intenso para moderadas e positivas e vermelho claro para fraca e positiva. Azul para correlações negativa, azul forte forte e negativa, azul menos intenso para moderada e negativa e azul claro para fraca e negativa ou mais próximo do branco sem correlação.
+Foi elaborada uma matriz de confusão para compreender melhor a correlação entre as variáveis do Dataset. É possível comparar variáveis utilizando mapa de calor, sendo vermelho para correlações de Pearson fortes e positivas, vermelho menos intenso para moderadas e positivas e vermelho claro para fraca e positiva. Azul para correlações negativa, azul forte forte e negativa, azul menos intenso para moderada e negativa e azul claro para fraca e negativa ou mais próximo do branco sem correlação.
 
 ![image](https://github.com/user-attachments/assets/9001447d-acb5-4ba3-ad46-e249157d860d)
 
-Utilizando a IQR (amplitude inter quartil) que é a diferença entre o Q3 (terceiro quartil) e Q1 (primeiro quartil) vemos que que não foram encontrados nenhum outlier no dataset que está sendo trabalhado.
+Utilizando a IQR (amplitude inter quartil) que é a diferença entre o Q3 (terceiro quartil) e Q1 (primeiro quartil) observa-se que que não foram encontrados nenhum outlier no dataset que está sendo trabalhado.
 
 ![image](https://github.com/user-attachments/assets/0c2f8274-0aa7-4ba4-9499-d344fea6bdfb)
 ![image](https://github.com/user-attachments/assets/805afdad-1b89-412e-bde0-30b12443a318)
 
-Usando o pairplot da biblioteca seaborn do python conseguimos identificar algumas características interessantes do dataset:
-1) Age (idade): notamos que as idades com mais incidência de problemas caridovasculares possui maior ocorrências para as faixas etárias: 40 anos (possivelmente ocorre por conta de hábitos pouco saudáveis como sedentarismo e má alimentação associados à alta carga de estresse já que se encontram possivelmente profissionamente ativos) e entre 80 e 90 anos (possivelmente em decorrência da idade e consequência de alguns hábitos não saudáveis ao longo da vida);
-2) Chest pain type (tipo de dor no peito): notamos que Non-anginal Pain (Dor não anginosa) e Asymptomatic (Assintomático) são as mais frequentes, o que indica que uma dor no peito demanda um exame mais amplo além de causas cardiovasculares (como: pulmões, músculos, esôfago entre outros) e a importância de um acompanhamento mais constante da condição cardíaca, pois há casos que não há sintomas evidentes de possíveis probelmas.
-3) Sobre Treatment (tratamento): os tratamentos mais indicados são Lifestyle Changes (Mudanças no estilo de vida) e Coronary Artery Bypass Graft (Enxerto de Revascularização da Artéria Coronária) que consiste em construir um novo caminho para o fluxo de sangue. Vendo isso temos que a adequação da dieta para que seja mais balanceada e adoção dos exercícios físicos na rotina podem ser suficiente para correção ou prevenção de problemas cardiovasculares, e nos caso do Bypass, mostra que muitos casos são extremos e indicam entupimento de veias, tendo como possíveis causas tabagismo, dieta desbalanceada e sedentarismo.
-4) Diabetes: notamos que pessoas com essa condição são mais propensas à desenvolverem problemas cardiovasculares;
-5) Smoking Status (Status de fumante): olhando o dataset, vimos que fumantes da categoria former (ex-fumante) e current (atualmente fumante) tem mais chances de terem problemas cardíacos, no caso de pessoas que pararam de fumar estão tendo a consequência de ter realizado esse hábito por alguns anos e no caso de pessoas que fumam atualmente podem ser pessoas que fumam há algum tempo ou mesmo pessoas que fumam há pouco tempo e que possuem hábitos pouco saudáveis como sedenterismo e dieta desbalanceada. Importante destacar que nesse estudo não há presença de pessoas não fumantes, mostrando o quanto o tabagismo é altamente relacionado à problemas cardiovasculares.
+Usando o pairplot da biblioteca seaborn do python foram identificadas algumas características interessantes do dataset:
+1) Age (idade): observa-se que há maior incidência de problemas caridovasculares nas faixas etárias: 40 anos (possivelmente ocorre por conta de hábitos pouco saudáveis como sedentarismo e má alimentação associados à alta carga de estresse já que se encontram possivelmente profissionamente ativos) e entre 80 e 90 anos (possivelmente em decorrência da idade e consequência de alguns hábitos não saudáveis ao longo da vida);
+2) Chest pain type (tipo de dor no peito): nota-se que Non-anginal Pain (Dor não anginosa) e Asymptomatic (Assintomático) são as mais frequentes, o que indica que uma dor no peito demanda um exame mais amplo além de causas cardiovasculares (como: pulmões, músculos, esôfago entre outros) e a importância de um acompanhamento mais constante da condição cardíaca, pois há casos que não há sintomas evidentes de possíveis problemas.
+3) Sobre Treatment (tratamento): os tratamentos mais indicados são Lifestyle Changes (Mudanças no estilo de vida) e Coronary Artery Bypass Graft (Cirurgia de Revascularização do Miocárdio ou "Ponte de Safena") que consiste em construir um novo caminho para o fluxo de sangue. Vendo isso compreende-se que a adequação da dieta para que seja mais balanceada e adoção dos exercícios físicos na rotina podem ser suficiente para correção ou prevenção de problemas cardiovasculares. Nos caso do Bypass, mostra que muitos casos são extremos e indicam entupimento de veias, tendo como possíveis causas tabagismo, dieta desbalanceada e sedentarismo.
+4) Diabetes: de acordo com análise, pessoas com essa condição são mais propensas à desenvolverem problemas cardiovasculares;
+5) Smoking Status (Status de fumante): observando o dataset, nota-se que fumantes da categoria former (ex-fumante) e current (atualmente fumante) tem mais chances de terem problemas cardíacos. Pessoas que pararam de fumar estão sofrendo a consequência de seu hábito anterior, e para pessoas que fumam atualmente o tempo indifere. Importante destacar que nesse estudo não há presença de pessoas não fumantes, mostrando o quanto o tabagismo é altamente relacionado à problemas cardiovasculares.
 
 
 ## Ferramentas utilizadas
 
-A principal ferramenta de software utilizada foi a aplicação da linguagem Python no ambiente Google Colab em conjunto com o Power BI, empregada para coletar métricas que apoiarão nas análises dos pacientes do dataset . As métricas foram realizadas atráves da linguagem DAX(Data Analysis Expressions). Também foi utilizado o Power Query, ferramenta ETL para limpeza e preparação de dados do Power BI.
+A principal ferramenta de software utilizada foi a aplicação da linguagem Python no ambiente Google Colab em conjunto com o Power BI, empregada para coletar métricas que apoiarão nas análises dos pacientes do dataset. As métricas foram realizadas atráves da linguagem DAX (Data Analysis Expressions). Também foi utilizado o Power Query, ferramenta ETL para limpeza e preparação de dados do Power BI.
 
