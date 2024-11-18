@@ -5,14 +5,23 @@
 ## Importando Bibliotecas Necessárias
 
 import numpy as np # linear algebra
+
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+
 import matplotlib.pyplot as plt # for data visualization purposes
+
 import seaborn as sns # for statistical data visualization
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.tree import DecisionTreeClassifier
+
 from sklearn.preprocessing import StandardScaler
+
 from sklearn.metrics import accuracy_score
+
 from sklearn.impute import SimpleImputer
+
 import warnings
 
 warnings.filterwarnings('ignore')
