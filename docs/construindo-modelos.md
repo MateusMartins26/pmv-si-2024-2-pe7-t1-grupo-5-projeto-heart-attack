@@ -1,31 +1,147 @@
 # Preparação dos dados
 
-Nesta etapa, deverão ser descritas todas as técnicas utilizadas para pré-processamento/tratamento dos dados.
+# Modelo - Classificador Naive Bayes
 
-Algumas das etapas podem estar relacionadas à:
+## Importando Bibliotecas Necessárias
 
-* Limpeza de Dados: trate valores ausentes: decida como lidar com dados faltantes, seja removendo linhas, preenchendo com médias, medianas ou usando métodos mais avançados; remova _outliers_: identifique e trate valores que se desviam significativamente da maioria dos dados.
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import matplotlib.pyplot as plt # for data visualization purposes
+import seaborn as sns # for statistical data visualization
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score
+from sklearn.impute import SimpleImputer
+import warnings
 
-* Transformação de Dados: normalize/padronize: torne os dados comparáveis, normalizando ou padronizando os valores para uma escala específica; codifique variáveis categóricas: converta variáveis categóricas em uma forma numérica, usando técnicas como _one-hot encoding_.
+warnings.filterwarnings('ignore')
+%matplotlib inline
+import os
+for dirname, _, filenames in os.walk('/kaggle/input'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
 
-* _Feature Engineering_: crie novos atributos que possam ser mais informativos para o modelo; selecione características relevantes e descarte as menos importantes.
+        import pandas as pd
 
-* Tratamento de dados desbalanceados: se as classes de interesse forem desbalanceadas, considere técnicas como _oversampling_, _undersampling_ ou o uso de algoritmos que lidam naturalmente com desbalanceamento.
+## Colocando Dataset em uma variável
 
-* Separação de dados: divida os dados em conjuntos de treinamento, validação e teste para avaliar o desempenho do modelo de maneira adequada.
-  
-* Manuseio de Dados Temporais: se lidar com dados temporais, considere a ordenação adequada e técnicas específicas para esse tipo de dado.
-  
-* Redução de Dimensionalidade: aplique técnicas como PCA (Análise de Componentes Principais) se a dimensionalidade dos dados for muito alta.
+df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
-* Validação Cruzada: utilize validação cruzada para avaliar o desempenho do modelo de forma mais robusta.
+## Mapeando, convertando e aplicando colunas categórias para númericas do tipo float, padrão americano
 
-* Monitoramento Contínuo: atualize e adapte o pré-processamento conforme necessário ao longo do tempo, especialmente se os dados ou as condições do problema mudarem.
+Gender_map = {'Male': 1, 'Female': 0}
+Has_Diabetes_map = {'Yes': 1, 'No': 0}
+Smoking_Status_map = {' Never': 0, 'Former': 1, 'Current': 2}
+Chest_Pain_Type_map = {'Typical Angina': 0, 'Atypical Angina': 1, 'Non-anginal Pain': 2, 'Asymptomatic': 3}
+Treatment_map = {'Lifestyle Changes': 0, 'Angioplasty': 1, 'Coronary Artery Bypass Graft (CABG)': 2, 'Medication': 3}
 
-* Entre outras....
+df['Gender'] = df['Gender'].map(Gender_map).astype(float)
+df['Has Diabetes'] = df['Has Diabetes'].map(Has_Diabetes_map).astype(float)
+df['Smoking Status'] = df['Smoking Status'].map(Smoking_Status_map).astype(float)
+df['Chest Pain Type'] = df['Chest Pain Type'].map(Chest_Pain_Type_map).astype(float)
+df['Treatment'] = df['Treatment'].map(Treatment_map).astype(float)
 
-Avalie quais etapas são importantes para o contexto dos dados que você está trabalhando, pois a qualidade dos dados e a eficácia do pré-processamento desempenham um papel fundamental no sucesso de modelo(s) de aprendizado de máquina. É importante entender o contexto do problema e ajustar as etapas de preparação de dados de acordo com as necessidades específicas de cada projeto.
 
+## Categorizando colunas
+
+num_cols = ['Age', 'Blood Pressure (mmHg)', 'Cholesterol (mg/dL)']
+cat_cols = ['Gender', 'Has Diabetes', 'Smoking Status', 'Chest Pain Type']
+
+num_imputer = SimpleImputer(strategy='median')
+cat_imputer = SimpleImputer(strategy='most_frequent')
+
+df[num_cols] = num_imputer.fit_transform(df[num_cols])
+df[cat_cols] = cat_imputer.fit_transform(df[cat_cols])
+
+
+## Mostrando informações do sobre os dados
+
+
+- ![image](/src/images/df.info().PNG)
+
+## Definindo Colunas 
+
+col_names = ['Gender', 'Age', 'Blood Pressure (mmHg)', 'Cholesterol (mg/dL)', 'Has Diabetes', 'Smoking Status', 'Chest Pain Type', 'Treatment']
+
+df.columns = col_names
+df.columns
+
+
+## Encontrando Variáveis Categóricas
+
+categorical = [var for var in df.columns if df[var].dtype=='O']
+
+print('Há {} variáveis categóricas\n'.format(len(categorical)))
+
+print('As variáveis categóricas são :\n\n', categorical)
+
+## Resultado 
+
+- ![image](/src/images/VarCat.png)
+
+## Declarando Var. Destino e Vetor de Características
+
+X = df.drop(['Treatment'], axis=1)
+
+y = df['Treatment']
+
+## Declarando Var. Destino e Vetor de Características
+
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)
+
+## Resultado tamanho dos set de treinamento e de teste
+
+X_train.shape, X_test.shape
+
+- ![image](/src/images/set.png)
+
+
+## Como foi executado no início do código o mapeamento das variáveis, não há valores categóricos 
+
+categorical = [col for col in X_train.columns if X_train[col].dtypes == 'O']
+
+categorical
+
+
+numerical = [col for col in X_train.columns if X_train[col].dtypes != 'O']
+
+numerical
+
+
+- ![image](/src/images/Tipos%20Dados.png)
+
+
+
+## Feature Scaling(Determinando volume de recurso para treinametno)
+
+cols = X_train.columns
+
+
+## Começando o procedimento para criação do modelo 
+
+from sklearn.naive_bayes import GaussianNB
+
+## Instanciando o modelo
+
+gnb = GaussianNB()
+
+## Ajustando Modelo 
+
+gnb.fit(X_train, y_train)
+
+
+## Prevendo o resultado
+
+y_pred = gnb.predict(X_test) # Cada número é o tipo de treinamento realizado
+
+### Treatment_map ={'Lifestyle Changes': 1, 'Angioplasty': 2, 'Coronary Artery Bypass Graft (CABG)': 3, 'Medication': 4}
+
+y_pred
+
+ - ![image](/src/images/Prevendo%20Resultado.png)
 # Descrição dos modelos
 
 Nesta seção, conhecendo os dados e de posse dos dados preparados, é hora de descrever os algoritmos de aprendizado de máquina selecionados para a construção dos modelos propostos. Inclua informações abrangentes sobre cada algoritmo implementado, aborde conceitos fundamentais, princípios de funcionamento, vantagens/limitações e justifique a escolha de cada um dos algoritmos. 
