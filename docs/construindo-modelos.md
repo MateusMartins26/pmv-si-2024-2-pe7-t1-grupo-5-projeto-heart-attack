@@ -96,7 +96,7 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
     X_train.shape, X_test.shape
 
-    -![image](/src/images/set.png)
+-![image](/src/images/set.png)
 
 
 ## Como foi executado no início do código o mapeamento das variáveis, não há valores categóricos 
@@ -111,7 +111,7 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
     numerical
 
 
-    - ![image](/src/images/Tipos%20Dados.png)
+- ![image](/src/images/Tipos%20Dados.png)
 
 
 
@@ -141,12 +141,12 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
     y_pred
 
- - ![image](/src/images/Prevendo%20Resultado.png)
+- ![image](/src/images/Prevendo%20Resultado.png)
 
 
 ## Importando métrica de acurácia e demonstrando resultado da acurácia
 
- - ![image](/src/images/Acurácia.png)
+- ![image](/src/images/Acurácia.png)
 
 ## Treinamento de Y 
 
@@ -170,7 +170,7 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
     print('Null accuracy score: {0:0.4f}'. format(null_accuracy))
 
 
-    ![image](/src/images/AcuráciaNula.png)
+![image](/src/images/AcuráciaNula.png)
 
 ## Criando e plotando a matriz de confusão 
 
@@ -192,7 +192,7 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 ## Resultado 
 
-    ![image](/src/images/MatrizConfusão%20NB.png)
+![image](/src/images/MatrizConfusão%20NB.png)
 
 
 # Descrição dos modelos
