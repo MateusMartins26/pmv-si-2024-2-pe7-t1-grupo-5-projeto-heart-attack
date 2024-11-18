@@ -51,3 +51,92 @@ cat_imputer = SimpleImputer(strategy='most_frequent')
 
 df[num_cols] = num_imputer.fit_transform(df[num_cols])
 df[cat_cols] = cat_imputer.fit_transform(df[cat_cols])
+
+
+## Mostrando informações do sobre os dados
+
+
+- ![image](/src/images/df.info().PNG)
+
+## Definindo Colunas 
+
+col_names = ['Gender', 'Age', 'Blood Pressure (mmHg)', 'Cholesterol (mg/dL)', 'Has Diabetes', 'Smoking Status', 'Chest Pain Type', 'Treatment']
+
+df.columns = col_names
+df.columns
+
+
+## Encontrando Variáveis Categóricas
+
+categorical = [var for var in df.columns if df[var].dtype=='O']
+
+print('Há {} variáveis categóricas\n'.format(len(categorical)))
+
+print('As variáveis categóricas são :\n\n', categorical)
+
+## Resultado 
+
+- ![image](/src/images/VarCat.png)
+
+## Declarando Var. Destino e Vetor de Características
+
+X = df.drop(['Treatment'], axis=1)
+
+y = df['Treatment']
+
+## Declarando Var. Destino e Vetor de Características
+
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)
+
+## Resultado tamanho dos set de treinamento e de teste
+
+X_train.shape, X_test.shape
+
+- ![image](/src/images/set.png)
+
+
+## Como foi executado no início do código o mapeamento das variáveis, não há valores categóricos 
+
+categorical = [col for col in X_train.columns if X_train[col].dtypes == 'O']
+
+categorical
+
+
+numerical = [col for col in X_train.columns if X_train[col].dtypes != 'O']
+
+numerical
+
+
+- ![image](/src/images/Tipos%20Dados.png)
+
+
+
+## Feature Scaling(Determinando volume de recurso para treinametno)
+
+cols = X_train.columns
+
+
+## Começando o procedimento para criação do modelo 
+
+from sklearn.naive_bayes import GaussianNB
+
+## Instanciando o modelo
+
+gnb = GaussianNB()
+
+## Ajustando Modelo 
+
+gnb.fit(X_train, y_train)
+
+
+## Prevendo o resultado
+
+y_pred = gnb.predict(X_test) # Cada número é o tipo de treinamento realizado
+
+### Treatment_map ={'Lifestyle Changes': 1, 'Angioplasty': 2, 'Coronary Artery Bypass Graft (CABG)': 3, 'Medication': 4}
+
+y_pred
+
+ - ![image](/src/images/Prevendo%20Resultado.png)
