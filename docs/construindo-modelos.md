@@ -142,6 +142,59 @@ y_pred = gnb.predict(X_test) # Cada número é o tipo de treinamento realizado
 y_pred
 
  - ![image](/src/images/Prevendo%20Resultado.png)
+
+
+## Importando métrica de acurácia e demonstrando resultado da acurácia
+
+ - ![image](/src/images/Acurácia.png)
+
+## Treinamento de Y 
+
+y_pred_train = gnb.predict(X_train)
+
+y_pred_train
+
+## Resultado dos treinamntos
+
+print('Training set score: {:.4f}'.format(gnb.score(X_train, y_train)))
+
+print('Test set score: {:.4f}'.format(gnb.score(X_test, y_test)))
+
+![image](/src/images/Treinamento.png)
+
+## Checando o score de acurácia nula
+
+
+null_accuracy = (7407/(7407+2362))
+
+print('Null accuracy score: {0:0.4f}'. format(null_accuracy))
+
+
+![image](/src/images/AcuráciaNula.png)
+
+## Criando e plotando a matriz de confusão 
+
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
+
+cm = confusion_matrix(y_test, y_pred)
+
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
+            xticklabels=Treatment_map.keys(),
+            yticklabels=Treatment_map.keys())
+plt.title("Matriz de confusão do modelo Naive Bayes")
+plt.xlabel("Predicted Treatment")
+plt.ylabel("Actual Treatment")
+plt.savefig("knn_matriz_confusão.png")  
+plt.show()
+
+## Resultado 
+
+![image](/src/images/MatrizConfusão%20NB.png)
+
+
 # Descrição dos modelos
 
 Nesta seção, conhecendo os dados e de posse dos dados preparados, é hora de descrever os algoritmos de aprendizado de máquina selecionados para a construção dos modelos propostos. Inclua informações abrangentes sobre cada algoritmo implementado, aborde conceitos fundamentais, princípios de funcionamento, vantagens/limitações e justifique a escolha de cada um dos algoritmos. 
