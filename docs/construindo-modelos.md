@@ -137,7 +137,7 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
     y_pred = gnb.predict(X_test) # Cada número é o tipo de treinamento realizado
 
-### Treatment_map ={'Lifestyle Changes': 1, 'Angioplasty': 2, 'Coronary Artery Bypass Graft (CABG)': 3, 'Medication': 4}
+##### Treatment_map ={'Lifestyle Changes': 1, 'Angioplasty': 2, 'Coronary Artery Bypass Graft (CABG)': 3, 'Medication': 4}
 
     y_pred
 
