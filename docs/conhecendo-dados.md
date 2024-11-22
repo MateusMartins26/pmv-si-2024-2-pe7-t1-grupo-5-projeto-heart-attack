@@ -154,7 +154,7 @@ Segundo o especialista, para se escolher o melhor tratamento, ão levados em con
 
 Desta forma conclui-se que vários atributos estão atrelados para a melhor escolha do tratamento.
 
-Além disso, esses conhecimentos são refletidos na base de dados, é possível constatar essa informação através da matriz de confusão posicionada na seção “Descrição dos achados”.
+Além disso, esses conhecimentos são refletidos na base de dados, é possível constatar essa informação através da mapa de calor posicionada na seção “Descrição dos achados”.
 
 
 
@@ -165,7 +165,7 @@ Além disso, esses conhecimentos são refletidos na base de dados, é possível 
 
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
-Foi elaborada uma matriz de confusão para compreender melhor a correlação entre as variáveis do Dataset. É possível comparar variáveis utilizando mapa de calor, sendo vermelho para correlações de Pearson fortes e positivas, vermelho menos intenso para moderadas e positivas e vermelho claro para fraca e positiva. Azul para correlações negativa, azul forte forte e negativa, azul menos intenso para moderada e negativa e azul claro para fraca e negativa ou mais próximo do branco sem correlação.
+Foi elaborada uma mapa de calor para compreender melhor a correlação entre as variáveis do Dataset. É possível comparar variáveis utilizando mapa de calor, sendo vermelho para correlações de Pearson fortes e positivas, vermelho menos intenso para moderadas e positivas e vermelho claro para fraca e positiva. Azul para correlações negativa, azul forte forte e negativa, azul menos intenso para moderada e negativa e azul claro para fraca e negativa ou mais próximo do branco sem correlação.
 
 ![image](https://github.com/user-attachments/assets/9001447d-acb5-4ba3-ad46-e249157d860d)
 

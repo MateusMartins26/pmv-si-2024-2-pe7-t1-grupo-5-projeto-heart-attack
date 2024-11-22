@@ -100,7 +100,7 @@ _Fonte: Envolvidos do Projeto do Eixo 7_
 
     X_train.shape, X_test.shape
 
--![image](/src/images/set.png)
+![image](/src/images/set.png)
 
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
