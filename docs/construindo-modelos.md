@@ -26,7 +26,7 @@
 
 ## Colocando Dataset em uma variável
 
-df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
+    df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 ## Mapeando, convertando e aplicando colunas categórias para númericas do tipo float, padrão americano
 
