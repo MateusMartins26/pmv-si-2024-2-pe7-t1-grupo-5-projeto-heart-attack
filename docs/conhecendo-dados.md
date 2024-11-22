@@ -6,6 +6,7 @@
 
 
 ![image](https://github.com/user-attachments/assets/057f62bb-73ee-45ba-a983-3000ab840a01)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 O Dataset é composto por 8 colunas: 
@@ -21,18 +22,21 @@ Existem também 1.000 rows (linhas) referente a dados de 1.000 pessoas participa
 
 
 ![image](https://github.com/user-attachments/assets/9e21d732-08c7-4cca-8eb7-d6f990d45edf)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Das 8 colunas presentes no Dataset, 5 colunas apresentam dados do tipo objeto (Gender, Has Diabetes, Smoking Status Chest Pain Type, Treatment) sendo variáveis qualitativas e 3 colunas apresentam dados do tipo inteiro/int64 que são quantitativas (Age, Blood Pressure, Cholesterol). 
 
 
 ![image](https://github.com/user-attachments/assets/21f7d0b3-aed6-4dcb-9d47-2205d19f5156)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Importante destacar que não há dados nulos (linhas e colunas sem conteúdo) nesse Dataset. 
 
 
 ![image](https://github.com/user-attachments/assets/1dbfb213-7420-4129-8a40-f0f6f53371f5)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Foi realizado o describe do Dataset, verificando que possuem variáveis quantitativas com dados do tipo inteiro/int64 as colunas: Age, Blood Pressure e Choleterol. Abaixo, estão os parâmetros para cada uma das colunas:
@@ -48,6 +52,7 @@ Para as colunas que possuem variáveis qualitativas será realizada uma análise
 Importante: já é possível notar algumas características, como median 50% e mean média estão próximas, indicativo de formato parecido com distribuição normal. Observa-se que está bem distribuída, com comportamento regular.
 
 ![image](https://github.com/user-attachments/assets/fdf340c6-dad0-4156-a379-2d32c551ef40)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Verificou-se que o estudo foi realizado com 1.000 pessoas, sendo: 510 Mulheres e 490 Homens, e que a média de idade para ambos os gêneros é de 60 anos.
@@ -61,6 +66,7 @@ Nesta tabela, tem-se um breve detalhamento da média de colesterol dos pacientes
 
 
 ![image](/src/images/Colesterol.png)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Para mais detalhamentos, os códigos DAX utilizados se encontram na pasta src.
@@ -74,6 +80,7 @@ Segundo o Dr. Fernando Oliva afirmou que: “O excesso de colesterol é diretame
 Isso também pode ser mostrado no dataset escolhido pelos componentes, pois 92,51% dos pacientes possuem colesterol alto. Segue um gráfico que mostra o agrupamento desta informação. Basicamente foi adicionado uma coluna adicional no dataset para agrupar pacientes por colesterol alto e baixo(Acima de 160 mg/dL, de acordo com a Unimed) e a contagem dos pacientes do dataset.
 
 ![image](/src/images/Pacientes%20por%20%20Nível%20de%20Colesterol.png)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Com isso, conclui-se que o nível de colesterol é um fator importante para causar ataques cardíacos. 
@@ -84,6 +91,7 @@ Com isso, conclui-se que o nível de colesterol é um fator importante para caus
 A tabela de pressão arterial é útil para controlar doenças crônicas, como a hipertensão, entre outras, ou para verificar anormalidades que contribuem para o diagnóstico e sinalizam que é hora de buscar ajuda médica. Segundo o Departamento de Hipertensão Arterial da Sociedade Brasileira de Cardiologia, a pressão arterial normal limítrofe refere-se a valores que estão próximos ao limite superior do que é considerado normal. Isso geralmente indica que a pressão arterial está elevada, mas ainda não é alta o suficiente para ser classificada como hipertensão. No entanto, o risco de avançar para o grau 1 de hipertensão leve é muito grande. 
 
 ![image](https://github.com/user-attachments/assets/63d4b971-fb74-495a-837b-92724a40b8a7)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Tabela II. Classificação diagnóstica da hipertensão arterial (adultos com mais de 18 anos de idade).
@@ -113,6 +121,7 @@ Média da amostra (xˉ) = 147.5
 Desvio padrão da amostra (s) = 20.7 
 
 Utilizando a fórmula: ![image](https://github.com/user-attachments/assets/9121daea-4abd-4f6b-814d-67c55ad6a60d)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 t é aproximadamente = 20.7
@@ -153,18 +162,23 @@ Além disso, esses conhecimentos são refletidos na base de dados, é possível 
 ## Descrição dos achados
 
 ![image](https://github.com/user-attachments/assets/96836fd3-a8a2-4e6d-8efe-e7e3ed21e12d)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Foi elaborada uma matriz de confusão para compreender melhor a correlação entre as variáveis do Dataset. É possível comparar variáveis utilizando mapa de calor, sendo vermelho para correlações de Pearson fortes e positivas, vermelho menos intenso para moderadas e positivas e vermelho claro para fraca e positiva. Azul para correlações negativa, azul forte forte e negativa, azul menos intenso para moderada e negativa e azul claro para fraca e negativa ou mais próximo do branco sem correlação.
 
 ![image](https://github.com/user-attachments/assets/9001447d-acb5-4ba3-ad46-e249157d860d)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Utilizando a IQR (amplitude inter quartil) que é a diferença entre o Q3 (terceiro quartil) e Q1 (primeiro quartil) observa-se que que não foram encontrados nenhum outlier no dataset que está sendo trabalhado.
 
 ![image](https://github.com/user-attachments/assets/0c2f8274-0aa7-4ba4-9499-d344fea6bdfb)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
+
 ![image](https://github.com/user-attachments/assets/805afdad-1b89-412e-bde0-30b12443a318)
+
 _Fonte: Envolvidos do Projeto do Eixo 7_
 
 Usando o pairplot da biblioteca seaborn do python foram identificadas algumas características interessantes do dataset:
