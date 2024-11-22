@@ -60,6 +60,8 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 - ![image](/src/images/df.info().PNG)
 
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
 ## Definindo Colunas 
 
     col_names = ['Gender', 'Age', 'Blood Pressure (mmHg)', 'Cholesterol (mg/dL)', 'Has Diabetes', 'Smoking Status', 'Chest Pain Type', 'Treatment']
@@ -80,6 +82,8 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 - ![image](/src/images/VarCat.png)
 
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
 ## Declarando Var. Destino e Vetor de Características
 
     X = df.drop(['Treatment'], axis=1)
@@ -98,6 +102,8 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 -![image](/src/images/set.png)
 
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
 
 ## Como foi executado no início do código o mapeamento das variáveis, não há valores categóricos 
 
@@ -112,6 +118,8 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 
 - ![image](/src/images/Tipos%20Dados.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
 
 
 
@@ -143,10 +151,14 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 - ![image](/src/images/Prevendo%20Resultado.png)
 
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
 
 ## Importando métrica de acurácia e demonstrando resultado da acurácia
 
 - ![image](/src/images/Acurácia.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
 
 ## Treinamento de Y 
 
@@ -160,7 +172,9 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
     print('Test set score: {:.4f}'.format(gnb.score(X_test, y_test)))
 
-    ![image](/src/images/Treinamento.png)
+![image](/src/images/Treinamento.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
 
 ## Checando o score de acurácia nula
 
@@ -171,6 +185,8 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
 
 ![image](/src/images/AcuráciaNula.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
 
 ## Criando e plotando a matriz de confusão 
 
@@ -193,6 +209,8 @@ df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 ## Resultado 
 
 ![image](/src/images/MatrizConfusão%20NB.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
 
 
 # Descrição dos modelos
