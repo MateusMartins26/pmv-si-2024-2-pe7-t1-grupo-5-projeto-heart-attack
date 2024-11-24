@@ -1,30 +1,297 @@
 # Preparação dos dados
 
-Nesta etapa, deverão ser descritas todas as técnicas utilizadas para pré-processamento/tratamento dos dados.
+# Modelo - Classificador Naive Bayes
 
-Algumas das etapas podem estar relacionadas à:
+## Importando Bibliotecas Necessárias
 
-* Limpeza de Dados: trate valores ausentes: decida como lidar com dados faltantes, seja removendo linhas, preenchendo com médias, medianas ou usando métodos mais avançados; remova _outliers_: identifique e trate valores que se desviam significativamente da maioria dos dados.
+    import numpy as np # linear algebra
+    import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+    import matplotlib.pyplot as plt # for data visualization purposes
+    import seaborn as sns # for statistical data visualization
+    from sklearn.model_selection import train_test_split
+    from sklearn.tree import DecisionTreeClassifier
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.metrics import accuracy_score
+    from sklearn.impute import SimpleImputer
+    import warnings
 
-* Transformação de Dados: normalize/padronize: torne os dados comparáveis, normalizando ou padronizando os valores para uma escala específica; codifique variáveis categóricas: converta variáveis categóricas em uma forma numérica, usando técnicas como _one-hot encoding_.
+    warnings.filterwarnings('ignore')
+    %matplotlib inline
+    import os
+    for dirname, _, filenames in os.walk('/kaggle/input'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
 
-* _Feature Engineering_: crie novos atributos que possam ser mais informativos para o modelo; selecione características relevantes e descarte as menos importantes.
+        import pandas as pd
 
-* Tratamento de dados desbalanceados: se as classes de interesse forem desbalanceadas, considere técnicas como _oversampling_, _undersampling_ ou o uso de algoritmos que lidam naturalmente com desbalanceamento.
+## Colocando Dataset em uma variável
 
-* Separação de dados: divida os dados em conjuntos de treinamento, validação e teste para avaliar o desempenho do modelo de maneira adequada.
-  
-* Manuseio de Dados Temporais: se lidar com dados temporais, considere a ordenação adequada e técnicas específicas para esse tipo de dado.
-  
-* Redução de Dimensionalidade: aplique técnicas como PCA (Análise de Componentes Principais) se a dimensionalidade dos dados for muito alta.
+    df = pd.read_csv('/content/sample_data/heart_attack_dataset.csv')
 
-* Validação Cruzada: utilize validação cruzada para avaliar o desempenho do modelo de forma mais robusta.
+## Mapeando, convertando e aplicando colunas categórias para númericas do tipo float, padrão americano
 
-* Monitoramento Contínuo: atualize e adapte o pré-processamento conforme necessário ao longo do tempo, especialmente se os dados ou as condições do problema mudarem.
+    Gender_map = {'Male': 1, 'Female': 0}
+    Has_Diabetes_map = {'Yes': 1, 'No': 0}
+    Smoking_Status_map = {' Never': 0, 'Former': 1, 'Current': 2}
+    Chest_Pain_Type_map = {'Typical Angina': 0, 'Atypical Angina': 1, 'Non-anginal Pain': 2, 'Asymptomatic': 3}
+    Treatment_map = {'Lifestyle Changes': 0, 'Angioplasty': 1, 'Coronary Artery Bypass Graft (CABG)': 2, 'Medication': 3}
 
-* Entre outras....
+    df['Gender'] = df['Gender'].map(Gender_map).astype(float)
+    df['Has Diabetes'] = df['Has Diabetes'].map(Has_Diabetes_map).astype(float)
+    df['Smoking Status'] = df['Smoking Status'].map(Smoking_Status_map).astype(float)
+    df['Chest Pain Type'] = df['Chest Pain Type'].map(Chest_Pain_Type_map).astype(float)
+    df['Treatment'] = df['Treatment'].map(Treatment_map).astype(float)
 
-Avalie quais etapas são importantes para o contexto dos dados que você está trabalhando, pois a qualidade dos dados e a eficácia do pré-processamento desempenham um papel fundamental no sucesso de modelo(s) de aprendizado de máquina. É importante entender o contexto do problema e ajustar as etapas de preparação de dados de acordo com as necessidades específicas de cada projeto.
+
+## Categorizando colunas
+
+    num_cols = ['Age', 'Blood Pressure (mmHg)', 'Cholesterol (mg/dL)']
+    cat_cols = ['Gender', 'Has Diabetes', 'Smoking Status', 'Chest Pain Type']
+
+    num_imputer = SimpleImputer(strategy='median')
+    cat_imputer = SimpleImputer(strategy='most_frequent')
+
+    df[num_cols] = num_imputer.fit_transform(df[num_cols])
+    df[cat_cols] = cat_imputer.fit_transform(df[cat_cols])
+
+
+## Mostrando informações do sobre os dados
+
+
+- ![image](/src/images/df.info().PNG)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+## Definindo Colunas 
+
+    col_names = ['Gender', 'Age', 'Blood Pressure (mmHg)', 'Cholesterol (mg/dL)', 'Has Diabetes', 'Smoking Status', 'Chest Pain Type', 'Treatment']
+
+    df.columns = col_names
+    df.columns
+
+
+## Encontrando Variáveis Categóricas
+
+    categorical = [var for var in df.columns if df[var].dtype=='O']
+
+    print('Há {} variáveis categóricas\n'.format(len(categorical)))
+
+    print('As variáveis categóricas são :\n\n', categorical)
+
+## Resultado 
+
+- ![image](/src/images/VarCat.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+## Declarando Var. Destino e Vetor de Características
+
+    X = df.drop(['Treatment'], axis=1)
+
+    y = df['Treatment']
+
+## Declarando Var. Destino e Vetor de Características
+
+    from sklearn.model_selection import train_test_split
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)
+
+## Resultado tamanho dos set de treinamento e de teste
+
+    X_train.shape, X_test.shape
+
+![image](/src/images/set.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+
+## Como foi executado no início do código o mapeamento das variáveis, não há valores categóricos 
+
+    categorical = [col for col in X_train.columns if X_train[col].dtypes == 'O']
+
+    categorical
+
+
+    numerical = [col for col in X_train.columns if X_train[col].dtypes != 'O']
+
+    numerical
+
+
+- ![image](/src/images/Tipos%20Dados.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+
+
+## Feature Scaling(Determinando volume de recurso para treinametno)
+
+    cols = X_train.columns
+
+
+## Começando o procedimento para criação do modelo 
+
+    from sklearn.naive_bayes import GaussianNB
+
+## Instanciando o modelo
+
+    gnb = GaussianNB()
+
+## Ajustando Modelo 
+
+    gnb.fit(X_train, y_train)
+
+
+## Prevendo o resultado
+
+    y_pred = gnb.predict(X_test) # Cada número é o tipo de treinamento realizado
+
+##### Treatment_map ={'Lifestyle Changes': 1, 'Angioplasty': 2, 'Coronary Artery Bypass Graft (CABG)': 3, 'Medication': 4}
+
+    y_pred
+
+- ![image](/src/images/Prevendo%20Resultado.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+
+## Importando métrica de acurácia e demonstrando resultado da acurácia
+
+- ![image](/src/images/Acurácia.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+## Treinamento de Y 
+
+    y_pred_train = gnb.predict(X_train)
+
+    y_pred_train
+
+## Resultado dos treinamntos
+
+    print('Training set score: {:.4f}'.format(gnb.score(X_train, y_train)))
+
+    print('Test set score: {:.4f}'.format(gnb.score(X_test, y_test)))
+
+![image](/src/images/Treinamento.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+## Checando o score de acurácia nula
+
+
+    null_accuracy = (7407/(7407+2362))
+
+    print('Null accuracy score: {0:0.4f}'. format(null_accuracy))
+
+
+![image](/src/images/AcuráciaNula.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+## Criando e plotando a matriz de confusão 
+
+    import seaborn as sns
+    from sklearn.metrics import confusion_matrix
+
+    cm = confusion_matrix(y_test, y_pred)
+
+
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
+                xticklabels=Treatment_map.keys(),
+                yticklabels=Treatment_map.keys())
+    plt.title("Matriz de confusão do modelo Naive Bayes")
+    plt.xlabel("Predicted Treatment")
+    plt.ylabel("Actual Treatment")
+    plt.savefig("knn_matriz_confusão.png")  
+    plt.show()
+
+## Resultado 
+
+![image](/src/images/MatrizConfusão%20NB.png)
+
+_Fonte: Envolvidos do Projeto do Eixo 7_
+
+# Apresentação do modelo Floresta Aleatória (RandomFlorestClassifier)
+
+## Importando as bibliotecas
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.linear_model import LogisticRegression
+
+## Importação e leitura do dataset AtaqueCardiaco
+df = pd.read_csv('/content/datasetAtaqueCardiaco.csv')
+
+df.head()
+
+## MODELO RANDOM FOREST CLASSFIER
+
+## Verificar se há dados faltantes
+df.isnull().sum()
+
+## Substituir valores ausentes ou eliminando colunas com dados ausentes
+df = df.dropna()
+
+## Codificar variáveis categóricas com LabelEncoder
+label_encoder = LabelEncoder()
+
+df['Gender'] = label_encoder.fit_transform(df['Gender'])  # Male=1, Female=0
+df['Has Diabetes'] = label_encoder.fit_transform(df['Has Diabetes'])  # Yes=1, No=0
+df['Smoking Status'] = label_encoder.fit_transform(df['Smoking Status'])  # Never=0, Current=1, etc.
+df['Chest Pain Type'] = label_encoder.fit_transform(df['Chest Pain Type'])  # Codificando tipos de dor
+df['Treatment'] = label_encoder.fit_transform(df['Treatment'])  # Tratamentos como variável alvo
+
+## Visualizando as primeiras linhas após o pré-processamento
+df.head()
+
+## Definindo as variáveis independentes (X) e dependente (y)
+X = df.drop('Treatment', axis=1)  # Removendo a coluna 'Treatment' para ser a variável alvo
+y = df['Treatment']  # Variável alvo
+
+## Dividindir os dados em treino (80%) e teste (20%)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+## Visualizando as dimensões dos dados de treino e teste
+print(f"Tamanho do conjunto de treino: {X_train.shape}")
+print(f"Tamanho do conjunto de teste: {X_test.shape}")
+
+## Criar o modelo Random Forest
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+
+## Treinar o modelo com os dados de treino
+model.fit(X_train, y_train)
+
+## Fazer previsões com os dados de teste
+y_pred = model.predict(X_test)
+
+## Avaliar o modelo
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Acurácia do modelo: {accuracy * 100:.2f}%")
+
+## Relatório de classificação
+print(classification_report(y_test, y_pred))
+
+## Matriz de confusão
+conf_matrix = confusion_matrix(y_test, y_pred)
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=label_encoder.classes_, yticklabels=label_encoder.classes_)
+plt.xlabel('Predição')
+plt.ylabel('Real')
+plt.title('Matriz de Confusão')
+plt.show()
+
+![image](https://github.com/user-attachments/assets/a12d8958-4634-4d82-bf61-505af6c959e9)
+![image](https://github.com/user-attachments/assets/6e32a04a-f4fe-4883-9d43-1e655df08c99)
+
+Fonte: Envolvidos do Projeto do Eixo 7
+
+
 
 # Descrição dos modelos
 
@@ -53,3 +320,42 @@ Em pesquisa e experimentação em sistemas de informação, um pipeline de pesqu
 Todas as tarefas realizadas nesta etapa deverão ser registradas em formato de texto junto com suas explicações de forma a apresentar  os códigos desenvolvidos e também, o código deverá ser incluído, na íntegra, na pasta "src".
 
 Além disso, deverá ser entregue um vídeo onde deverão ser descritas todas as etapas realizadas. O vídeo, que não tem limite de tempo, deverá ser apresentado por **todos os integrantes da equipe**, de forma que, cada integrante tenha oportunidade de apresentar o que desenvolveu e as  percepções obtidas.
+
+
+
+# Árvore de Decisão - Decision Tree
+
+![image](https://github.com/user-attachments/assets/03d01f1b-d7b5-4947-bd1c-5bf9c5cd47ff)
+
+![image](https://github.com/user-attachments/assets/f12ce3c5-50b4-473d-896e-065e7109421d)
+
+![image](https://github.com/user-attachments/assets/b0522d26-32bf-4b51-bc9a-3d08803caccd)
+
+![image](https://github.com/user-attachments/assets/790c593f-8d48-457c-a6b2-0a629726c0da)
+
+![image](https://github.com/user-attachments/assets/ae4d8c4e-4311-410c-8c1e-e636b3359e74)
+
+![image](https://github.com/user-attachments/assets/41d5e1cd-2ece-4237-bb25-ad064c9f04a6)
+
+![image](https://github.com/user-attachments/assets/120fe0cb-ed1a-4538-be15-b39995c15b94)
+
+![image](https://github.com/user-attachments/assets/8770c97d-8934-4c07-8cca-a68a77c4668e)
+
+![image](https://github.com/user-attachments/assets/edcf24ee-f332-4bde-b029-c5cdd28d74fe)
+
+![image](https://github.com/user-attachments/assets/9bb4dc7d-13e3-4841-93b8-323c85dcd55f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
